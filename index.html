@@ -43,55 +43,90 @@
         <a href="https://github.com/your-username/project-link">View on GitHub</a>
     </div>
     
-<div class="project">
-  <h3>Tourism Segmentation with PCA & Clustering</h3>
-  <p>Built a market segmentation model for a European travel company using 5,000+ Google Reviews. Applied dimensionality reduction and unsupervised learning to identify customer personas and inform targeted travel package design.</p>
-  <ul>
-    <li><strong>Tools:</strong> Python, scikit-learn, PCA, k-means, matplotlib</li>
-    <li><strong>Skills:</strong> Clustering, PCA, customer segmentation, data storytelling</li>
-    <li><strong>Outcome:</strong> Identified 10 distinct traveler groups, enabling personalized marketing strategies based on preferences for food, culture, or recreation.</li>
-  </ul>
-</div> 
+<div class="container">
+  <header>
+    <h1>Fatima Yousofi</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="docs/Fatima_Yousofi_Resume.pdf" target="_blank">Resume</a>
+      <a href="https://github.com/Fyousofi" target="_blank">GitHub</a>
+      <a href="mailto:you@email">Contact</a>
+    </nav>
+  </header>
 
-<div class="project">
-  <h3>Employee Attrition Prediction with ML</h3>
-  <p>Analyzed attrition drivers for a 5,000-person company using machine learning models including logistic regression, random forest, and bagging. Translated model insights into strategic HR recommendations.</p>
-  <ul>
-    <li><strong>Tools:</strong> Python, R, scikit-learn</li>
-    <li><strong>Skills:</strong> Classification modeling, feature selection, model evaluation (AUC, precision/recall)</li>
-    <li><strong>Outcome:</strong> Final model achieved 98% AUC; key predictors included income, tenure, and job satisfaction.</li>
-  </ul>
-</div>
-    
-<div class="project">
-  <h3>Airbnb Price Prediction in Washington, DC</h3>
-  <p>Built and compared linear regression models to predict Airbnb listing prices based on neighborhood, room type, and property features. Conducted hypothesis testing and confidence interval analysis.</p>
-  <ul>
-    <li><strong>Tools:</strong> R (lm, ggplot2)</li>
-    <li><strong>Skills:</strong> Statistical modeling, regression diagnostics, inferential analysis</li>
-    <li><strong>Outcome:</strong> Identified top price drivers: bedrooms (+$67), accommodates (+$19), and location (Shaw, Georgetown).</li>
-  </ul>
-</div>
+  <h2>Selected Projects</h2>
+  <div class="grid">
+    <!-- Canterra -->
+    <article class="card">
+      <img class="thumb" src="images/canterra_attrition_auc.png" alt="ROC and feature importance for attrition model">
+      <div class="card-body">
+        <h3>Employee Attrition – Predictive Modeling</h3>
+        <div class="meta">2024 · Python, R · Classification</div>
+        <p>Built and compared LR, Trees, Bagging, and Random Forest to identify drivers of attrition and inform HR interventions.</p>
+        <div class="tags">
+          <span class="tag">scikit-learn</span><span class="tag">AUC/ROC</span><span class="tag">Feature importance</span>
+        </div>
+        <a href="#canterra">Read summary</a>
+      </div>
+    </article>
 
-<div class="project">
-  <h3>Capital Bike Share – Demand Forecasting</h3>
-  <p>Predicted hourly demand for bike rentals in Washington, DC using weather, time, and seasonal data. Evaluated multiple linear and non-linear regression models in R, applying log and polynomial transformations.</p>
-  <ul>
-    <li><strong>Tools:</strong> R (caret, ggplot2, lmtest)</li>
-    <li><strong>Skills:</strong> Regression modeling, cross-validation, feature engineering</li>
-    <li><strong>Outcome:</strong> Final model explained 82% of variance in demand; supported pricing and operations planning.</li>
-  </ul>
-</div>
+    <!-- Tourism -->
+    <article class="card">
+      <img class="thumb" src="images/tourism_pca_clustering.png" alt="PCA + clustering segments">
+      <div class="card-body">
+        <h3>Tourism Segmentation – PCA & K-means</h3>
+        <div class="meta">2025 · Python · Unsupervised</div>
+        <p>Segmented 5k+ reviews to discover traveler personas for targeted package design.</p>
+        <div class="tags">
+          <span class="tag">PCA</span><span class="tag">K-means</span><span class="tag">EDA</span>
+        </div>
+        <a href="#tourism">Read summary</a>
+      </div>
+    </article>
 
-<div class="project">
-  <h3>NATA Supermarkets – Customer Segmentation</h3>
-  <p>Performed customer profiling and segmentation using RFM analysis and clustering. Created targeted strategy recommendations based on demographic and behavioral insights.</p>
-  <ul>
-    <li><strong>Tools:</strong> Python (pandas, seaborn), RFM modeling</li>
-    <li><strong>Skills:</strong> Segmentation, data cleaning, visualization, marketing analytics</li>
-    <li><strong>Outcome:</strong> Delivered tailored strategies to retain high-spending and at-risk customers, based on product category and frequency behavior.</li>
-  </ul>
+    <!-- Airbnb -->
+    <article class="card">
+      <img class="thumb" src="images/airbnb_price_model.png" alt="Airbnb DC price model visuals">
+      <div class="card-body">
+        <h3>Airbnb DC – Price Modeling</h3>
+        <div class="meta">2024 · R · Regression</div>
+        <p>Explained price drivers across neighborhoods and property features; quantified effects for strategy.</p>
+        <div class="tags">
+          <span class="tag">lm()</span><span class="tag">Diagnostics</span><span class="tag">CI & tests</span>
+        </div>
+        <a href="#airbnb">Read summary</a>
+      </div>
+    </article>
+
+    <!-- Bike -->
+    <article class="card">
+      <img class="thumb" src="images/bike_demand_prediction.png" alt="Pred vs actual demand chart">
+      <div class="card-body">
+        <h3>Capital Bike Share – Demand Forecast</h3>
+        <div class="meta">2024 · R · Forecasting</div>
+        <p>Forecasted hourly demand using weather & timing features to support ops planning.</p>
+        <div class="tags">
+          <span class="tag">Caret</span><span class="tag">Regression</span><span class="tag">Cross-val</span>
+        </div>
+        <a href="#bike">Read summary</a>
+      </div>
+    </article>
+
+    <!-- NATA -->
+    <article class="card">
+      <img class="thumb" src="images/nata_rfm_chart.png" alt="RFM segments distribution">
+      <div class="card-body">
+        <h3>NATA Supermarkets – Customer Segmentation</h3>
+        <div class="meta">2024 · Python · Marketing Analytics</div>
+        <p>Built RFM-based segments and tactics to boost loyalty and reduce churn.</p>
+        <div class="tags">
+          <span class="tag">RFM</span><span class="tag">pandas</span><span class="tag">Visualization</span>
+        </div>
+        <a href="#nata">Read summary</a>
+      </div>
+    </article>
+  </div>
+
+  <footer>© 2025 · Fatima Yousofi</footer>
 </div>
-    
-<style>
- 
