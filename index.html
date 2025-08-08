@@ -42,7 +42,47 @@
         <p><strong>Tools:</strong> Python, scikit-learn, SHAP</p>
         <a href="https://github.com/your-username/project-link">View on GitHub</a>
     </div>
-    
+
+
+<style>
+  :root{
+    --text:#1a202c; --muted:#4a5568; --accent:#2563eb; --bg:#ffffff; --card:#f8fafc;
+  }
+  *{box-sizing:border-box}
+  body{font-family:Inter, Arial, sans-serif; margin:0; color:var(--text); background:var(--bg)}
+  .container{max-width:1050px; margin:40px auto; padding:0 20px}
+  header{display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:space-between; margin-bottom:24px}
+  header a{color:var(--muted); text-decoration:none; margin-right:12px}
+  header a:hover{color:var(--accent)}
+  h1{font-size:28px; margin:0}
+  h2{margin:28px 0 12px}
+  /* Grid */
+  .grid{
+    display:grid; gap:18px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+  /* Project card */
+  .card{
+    background:var(--card); border-radius:14px; overflow:hidden; border:1px solid #e5e7eb;
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .card:hover{ transform:translateY(-3px); box-shadow:0 10px 24px rgba(0,0,0,.08)}
+  .thumb{
+    width:100%; aspect-ratio:16/9; object-fit:cover; display:block;
+    background:#e5e7eb;
+  }
+  .card-body{padding:14px 16px}
+  .card h3{margin:4px 0 8px; font-size:18px}
+  .meta{color:var(--muted); font-size:13px; margin-bottom:8px}
+  .tags{display:flex; flex-wrap:wrap; gap:6px; margin:8px 0}
+  .tag{font-size:12px; padding:3px 8px; border-radius:999px; background:#e2e8f0}
+  .card a{color:var(--accent); text-decoration:none; font-weight:500}
+  .card a:hover{text-decoration:underline}
+  footer{margin:36px 0 24px; color:var(--muted); font-size:13px; text-align:center}
+  /* Mobile tweaks */
+  @media (max-width:480px){ h1{font-size:24px} }
+</style>
+  
 <div class="container">
   <header>
     <h1>Fatima Yousofi</h1>
