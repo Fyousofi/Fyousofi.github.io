@@ -45,57 +45,91 @@
 <h2>Selected Projects</h2>
 
 <div class="project">
-  <img src="images/canterra_attrition_auc.png" alt="Canterra Attrition AUC" style="width:100%; border-radius:8px; margin-bottom:10px;">
-  <h3>Canterra Employee Attrition – ML Modeling</h3>
-  <p>Built machine learning models to predict employee attrition and uncover key drivers using logistic regression, decision trees, and random forests.</p>
+  <h3> Tourism Segmentation with PCA & Clustering</h3>
+  <p>Built a market segmentation model for a European travel company using 5,000+ Google Reviews. Applied dimensionality reduction and unsupervised learning to identify customer personas and inform targeted travel package design.</p>
   <ul>
-    <li><strong>Tools:</strong> Python (scikit-learn), R</li>
-    <li><strong>Skills:</strong> Classification, AUC, feature importance, HR analytics</li>
-    <li><strong>Outcome:</strong> 98.4% AUC using random forest, identified top risk factors like income and tenure.</li>
+    <li><strong>Tools:</strong> Python, scikit-learn, PCA, k-means, matplotlib</li>
+    <li><strong>Skills:</strong> Clustering, PCA, customer segmentation, data storytelling</li>
+    <li><strong>Outcome:</strong> Identified 10 distinct traveler groups, enabling personalized marketing strategies based on preferences for food, culture, or recreation.</li>
   </ul>
 </div>
 
 <div class="project">
-  <img src="images/tourism_pca_clustering.png" alt="Tourism Clustering" style="width:100%; border-radius:8px; margin-bottom:10px;">
-  <h3> Tourism Market Segmentation – PCA & Clustering</h3>
-  <p>Segmented 5,000+ customer reviews for a European travel company using PCA and k-means to uncover traveler personas.</p>
+  <h3> Employee Attrition Prediction with ML</h3>
+  <p>Analyzed attrition drivers for a 5,000-person company using machine learning models including logistic regression, random forest, and bagging. Translated model insights into strategic HR recommendations.</p>
   <ul>
-    <li><strong>Tools:</strong> Python, scikit-learn</li>
-    <li><strong>Skills:</strong> PCA, clustering, dimensionality reduction, storytelling</li>
-    <li><strong>Outcome:</strong> Identified 10 distinct traveler groups to support targeted marketing.</li>
+    <li><strong>Tools:</strong> Python, R, scikit-learn</li>
+    <li><strong>Skills:</strong> Classification modeling, feature selection, model evaluation (AUC, precision/recall)</li>
+    <li><strong>Outcome:</strong> Final model achieved 98% AUC; key predictors included income, tenure, and job satisfaction.</li>
   </ul>
 </div>
 
 <div class="project">
-  <img src="images/airbnb_price_model.png" alt="Airbnb Pricing Model" style="width:100%; border-radius:8px; margin-bottom:10px;">
-  <h3>Airbnb DC Price Modeling – Regression</h3>
-  <p>Analyzed factors influencing listing prices for Airbnb rentals in Washington, DC using regression analysis and visual exploration.</p>
+  <h3> Airbnb Price Prediction in Washington, DC</h3>
+  <p>Built and compared linear regression models to predict Airbnb listing prices based on neighborhood, room type, and property features. Conducted hypothesis testing and confidence interval analysis.</p>
   <ul>
-    <li><strong>Tools:</strong> R, ggplot2, lm()</li>
-    <li><strong>Skills:</strong> Linear regression, data cleaning, multicollinearity analysis</li>
-    <li><strong>Outcome:</strong> Location, number of bedrooms, and amenities were most predictive of price.</li>
+    <li><strong>Tools:</strong> R (lm, ggplot2)</li>
+    <li><strong>Skills:</strong> Statistical modeling, regression diagnostics, inferential analysis</li>
+    <li><strong>Outcome:</strong> Identified top price drivers: bedrooms (+$67), accommodates (+$19), and location (Shaw, Georgetown).</li>
   </ul>
 </div>
 
 <div class="project">
-  <img src="images/bike_demand_prediction.png" alt="Bike Demand Forecast" style="width:100%; border-radius:8px; margin-bottom:10px;">
-  <h3>Capital Bike Share Demand Forecast</h3>
-  <p>Predicted hourly bike demand using regression and decision tree models with weather and seasonal variables.</p>
+  <h3> Capital Bike Share – Demand Forecasting</h3>
+  <p>Predicted hourly demand for bike rentals in Washington, DC using weather, time, and seasonal data. Evaluated multiple linear and non-linear regression models in R, applying log and polynomial transformations.</p>
   <ul>
-    <li><strong>Tools:</strong> R, caret, rpart</li>
-    <li><strong>Skills:</strong> Forecasting, model evaluation, time-series features</li>
-    <li><strong>Outcome:</strong> RMSE: 117.4; season, weather, and hour were key demand drivers.</li>
+    <li><strong>Tools:</strong> R (caret, ggplot2, lmtest)</li>
+    <li><strong>Skills:</strong> Regression modeling, cross-validation, feature engineering</li>
+    <li><strong>Outcome:</strong> Final model explained 82% of variance in demand; supported pricing and operations planning.</li>
   </ul>
 </div>
 
 <div class="project">
-  <img src="images/nata_rfm_chart.png" alt="NATA RFM Segmentation" style="width:100%; border-radius:8px; margin-bottom:10px;">
-  <h3>🛒 NATA Supermarket – Customer Segmentation</h3>
-  <p>Conducted RFM analysis on supermarket sales to develop loyalty segments and recommend targeted promotions.</p>
+  <h3>🛒 NATA Supermarkets – Customer Segmentation</h3>
+  <p>Performed customer profiling and segmentation using RFM analysis and clustering. Created targeted strategy recommendations based on demographic and behavioral insights.</p>
   <ul>
-    <li><strong>Tools:</strong> Python, pandas, seaborn</li>
-    <li><strong>Skills:</strong> RFM segmentation, visualization, customer retention strategy</li>
-    <li><strong>Outcome:</strong> Delivered actionable loyalty tiers and marketing strategy for churn prevention.</li>
+    <li><strong>Tools:</strong> Python (pandas, seaborn), RFM modeling</li>
+    <li><strong>Skills:</strong> Segmentation, data cleaning, visualization, marketing analytics</li>
+    <li><strong>Outcome:</strong> Delivered tailored strategies to retain high-spending and at-risk customers, based on product category and frequency behavior.</li>
   </ul>
 </div>
-<h2>Selected Projects</h2>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 40px auto;
+    max-width: 900px;
+    line-height: 1.6;
+    color: #2c3e50;
+  }
+  h1, h2 {
+    color: #1a202c;
+  }
+  .project {
+    background-color: #f9f9f9;
+    border-left: 5px solid #2980b9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  .project h3 {
+    margin-top: 0;
+    color: #2c3e50;
+  }
+  ul {
+    list-style-type: square;
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+  a {
+    color: #2980b9;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+  <p><strong>Data & Research Analyst</strong> | IFC – World Bank Group | M.S. Business Analytics at Georgetown University</p>
+
+<p>I specialize in data-driven decision-making, research analytics, and operational strategy. With experience across the World Bank and IFC, I work at the intersection of development, data, and policy. My projects span machine learning, spatial modeling, and customer analytics — all designed to drive real-world impact in emerging markets.</p>
+
