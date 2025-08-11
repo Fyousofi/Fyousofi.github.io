@@ -1,135 +1,256 @@
-</p>
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Fatima Yousofi – Data Portfolio</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 40px; }
-        h1, h2 { color: #2c3e50; }
-        .project { margin-bottom: 20px; }
-        .contact a { text-decoration: none; color: #2980b9; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fatima Yousofi — Data Portfolio</title>
+
+  <!-- SEO -->
+
+  <meta name="description" content="Data & research analyst portfolio — ML, spatial risk, forecasting, and operations analytics for development." />
+  <link rel="canonical" href="https://fyousofi.github.io/" />
+
+  <!-- Open Graph / Twitter -->
+
+  <meta property="og:title" content="Fatima Yousofi — Data Portfolio" />
+  <meta property="og:description" content="Projects in ML, spatial modeling, and operations analytics." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://fyousofi.github.io/images/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <style>
+    :root{
+      --ink:#111827; --muted:#6b7280; --bg:#ffffff; --card:#f9fafb; --accent:#1f2937; --brand:#0f172a;
+      --border:#e5e7eb; --radius:16px; --gap:1.25rem; --shadow:0 2px 14px rgba(0,0,0,.06);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji"; color:var(--ink); background:var(--bg); line-height:1.6}
+    a{color:var(--brand); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1040px; margin:0 auto; padding:24px}
+
+    /* Header */
+    .site-header{position:sticky; top:0; background:#fff; border-bottom:1px solid var(--border); z-index:10}
+    .nav{display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:14px 24px}
+    .nav a{margin-right:1rem}
+    .nav a:last-child{margin-right:0}
+
+    /* Hero */
+    .hero{padding:48px 24px 24px}
+    .hero h1{font-size:clamp(28px, 5vw, 40px); margin:0 0 .25rem 0}
+    .subtitle{color:var(--muted); margin:.25rem 0 1rem}
+    .lead{max-width:70ch; color:#1f2937}
+    .cta{margin-top:1rem}
+    .btn{display:inline-block; padding:.65rem 1rem; border-radius:12px; border:1px solid var(--border); box-shadow:var(--shadow)}
+    .btn + .btn{margin-left:.5rem}
+    .btn.primary{background:var(--brand); color:#fff; border-color:var(--brand)}
+
+    /* Sections */
+    section{padding:24px}
+    h2{font-size:clamp(20px, 3.5vw, 28px); margin:0 0 .75rem}
+
+    /* Grid & Cards */
+    .grid{display:grid; gap:var(--gap); grid-template-columns:repeat(auto-fill, minmax(310px, 1fr))}
+    .card{background:var(--card); border:1px solid var(--border); border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow)}
+    .card img{width:100%; height:180px; object-fit:cover; background:#eef2f7}
+    .card-body{padding:16px}
+    .meta{color:var(--muted); font-size:.92rem; margin:.15rem 0 .6rem}
+    .card-actions{display:flex; gap:.5rem; flex-wrap:wrap; margin-top:.5rem}
+
+    /* Project blocks (Selected Projects) */
+    .project{background:var(--card); border:1px solid var(--border); border-left:6px solid var(--brand); padding:16px; border-radius:var(--radius); box-shadow:var(--shadow)}
+    .project h3{margin:0 0 .25rem}
+    .project ul{padding-left:1rem; margin:.5rem 0}
+
+    /* Footer */
+    footer{border-top:1px solid var(--border); padding:24px; color:var(--muted); text-align:center}
+
+    /* Utilities */
+    .sr-only{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0}
+  </style>
+
+  <!-- JSON-LD Schema (homepage only) -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Fatima Yousofi",
+    "url": "https://fyousofi.github.io/",
+    "jobTitle": "Data & Research Analyst",
+    "affiliation": {"@type": "Organization", "name": "IFC / World Bank Group"},
+    "sameAs": [
+      "https://github.com/fyousofi",
+      "https://www.linkedin.com/in/<your-handle>"
+    ],
+    "worksFeatured": [
+      {"@type": "CreativeWork", "name": "Spatial Risk Index for Health Infrastructure", "url": "https://fyousofi.github.io/projects/capstone.html"},
+      {"@type": "CreativeWork", "name": "LendingClub Default Risk Modeling", "url": "https://fyousofi.github.io/projects/lendingclub.html"}
+    ]
+  }
+  </script>
+
 </head>
 <body>
-
-    <h1>Fatima Yousofi</h1>
-<p><strong>Data & Research Analyst</strong> | IFC – World Bank Group | M.S. Business Analytics at Georgetown University</p>
-
-<p>I specialize in data-driven decision-making, research analytics, and operational strategy. With experience across the World Bank and IFC, I work at the intersection of development, data, and policy. My projects span machine learning, Spatial and Operations modeling, and data analytics — all designed to drive real-world impact in emerging markets.</p>
-
-    <h2>About Me</h2>
-    <p>I work at the intersection of Data, Economic Research, Operations and development. My experience spans Data analysis, Research and Operations, Machine Learning and Artificial Intelligence. This website highlights some of my recent projects.</p>
-
-    <h2>Projects</h2>
-
-    <div class="project">
-        <h3>World Bank - MSBA Capstone: Climate Change Risk Exposure & Health Infrastructure Vulnerabilities</h3>
-        <p>Led a spatial data analysis to assess Natural Disaster exposure in Peru, Colombia, South Africa, and Nepal using health and infrastructure data to support World Bank's mission in Disaster Reduction and Recovery.</p>
-        <p><strong>Tools:</strong> Python, KMeans, GeoPandas</p>
-        <a href="https://github.com/your-username/project-link">View on GitHub</a>
+  <header class="site-header" role="banner">
+    <div class="nav wrap">
+      <div>
+        <a href="/" aria-label="Home"><strong>Fatima Yousofi</strong></a>
+      </div>
+      <nav aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="/docs/resume.pdf" download>Resume</a>
+        <!-- TODO: replace with your real email -->
+        <a href="mailto:fyousofi@example.com">Contact</a>
+      </nav>
     </div>
+  </header>
 
-    <div class="project">
-        <h3>Predictive Modeling: LendingClub Interest Rate</h3>
-        <p>Built machine learning models to predict interest rates using regression trees, random forest, SVR, and neural networks.</p>
-        <p><strong>Tools:</strong> Python, scikit-learn, SHAP</p>
-        <a href="https://github.com/your-username/project-link">View on GitHub</a>
-    </div>
-<h2>Selected Projects</h2>
+  <main id="main-content">
+    <!-- HERO -->
+    <section class="hero wrap" aria-labelledby="home-title">
+      <h1 id="home-title">Fatima Yousofi</h1>
+      <p class="subtitle"><strong>Data & Research Analyst</strong> · IFC — World Bank Group · M.S. Business Analytics, Georgetown University</p>
+      <p class="lead">I specialize in data‑driven decision‑making across development, research, and operations. My work spans machine learning, spatial risk modeling, and analytics designed to drive real‑world impact in emerging markets.</p>
+      <div class="cta" role="group" aria-label="Primary actions">
+        <a class="btn primary" href="/docs/resume.pdf" download>Download Resume</a>
+        <a class="btn" href="#projects">View Projects</a>
+        <!-- TODO: replace with your real email -->
+        <a class="btn" href="mailto:fyousofi@example.com">Contact</a>
+      </div>
+    </section>
 
-<div class="project">
-  <h3> Tourism Segmentation with PCA & Clustering</h3>
-  <p>Built a market segmentation model for a European travel company using 5,000+ Google Reviews. Applied dimensionality reduction and unsupervised learning to identify customer personas and inform targeted travel package design.</p>
-  <ul>
-    <li><strong>Tools:</strong> Python, scikit-learn, PCA, k-means, matplotlib</li>
-    <li><strong>Skills:</strong> Clustering, PCA, customer segmentation, data storytelling</li>
-    <li><strong>Outcome:</strong> Identified 10 distinct traveler groups, enabling personalized marketing strategies based on preferences for food, culture, or recreation.</li>
-  </ul>
-</div>
+```
+<!-- ABOUT -->
+<section id="about" class="wrap" aria-labelledby="about-title">
+  <h2 id="about-title">About Me</h2>
+  <p>I work at the intersection of data, economic research, operations, and development. My experience spans data analysis, research and operations, machine learning, and spatial analytics. This site highlights a few representative projects.</p>
+</section>
 
-<div class="project">
-  <h3> Employee Attrition Prediction with ML</h3>
-  <p>Analyzed attrition drivers for a 5,000-person company using machine learning models including logistic regression, random forest, and bagging. Translated model insights into strategic HR recommendations.</p>
-  <ul>
-    <li><strong>Tools:</strong> Python, R, scikit-learn</li>
-    <li><strong>Skills:</strong> Classification modeling, feature selection, model evaluation (AUC, precision/recall)</li>
-    <li><strong>Outcome:</strong> Final model achieved 0.98 AUC; key predictors included income, tenure, and job satisfaction.</li>
-  </ul>
-</div>
+<!-- FEATURED -->
+<section id="featured" class="wrap" aria-labelledby="featured-title">
+  <h2 id="featured-title">Featured</h2>
+  <div class="grid">
+    <!-- Capstone -->
+    <article class="card">
+      <img src="/images/capstone-banner.jpg" alt="Risk hotspots map with administrative boundaries" />
+      <div class="card-body">
+        <h3>Spatial Risk Index for Health Infrastructure</h3>
+        <p class="meta">Role: Lead Analyst · 2025</p>
+        <p>Identified high‑risk catchments and ranked health facilities for resilience investment across 4 countries using K‑means/PCA with hazard overlays and socio‑economic indicators.</p>
+        <div class="card-actions">
+          <a class="btn primary" href="/projects/capstone.html">Read case study</a>
+          <!-- TODO: replace with real repo URL -->
+          <a class="btn" href="https://github.com/fyousofi/REPO_CAPSTONE" target="_blank" rel="noopener">View on GitHub</a>
+        </div>
+      </div>
+    </article>
 
-<div class="project">
-  <h3> Airbnb Price Prediction in Washington, DC</h3>
-  <p>Built and compared linear regression models to predict Airbnb listing prices based on neighborhood, room type, and property features. Conducted hypothesis testing and confidence interval analysis.</p>
-  <ul>
-    <li><strong>Tools:</strong> R (lm, ggplot2)</li>
-    <li><strong>Skills:</strong> Statistical modeling, regression diagnostics, inferential analysis</li>
-    <li><strong>Outcome:</strong> Identified top price drivers: bedrooms (+$67), accommodates (+$19), and location (Shaw, Georgetown).</li>
-  </ul>
-</div>
+    <!-- LendingClub -->
+    <article class="card">
+      <img src="/images/lendingclub-banner.jpg" alt="Model performance chart comparing RMSE/AUC across algorithms" />
+      <div class="card-body">
+        <h3>Default Risk Modeling — LendingClub</h3>
+        <p class="meta">Role: Data Analyst · 2025</p>
+        <p>Engineered features and benchmarked RF / SVR / MLP models to predict default risk; improved AUC to 0.82 with calibrated thresholds for policy scenarios.</p>
+        <div class="card-actions">
+          <a class="btn primary" href="/projects/lendingclub.html">Read case study</a>
+          <!-- TODO: replace with real repo URL -->
+          <a class="btn" href="https://github.com/fyousofi/REPO_LENDINGCLUB" target="_blank" rel="noopener">View on GitHub</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
 
-<div class="project">
-  <h3> Capital Bike Share – Demand Forecasting</h3>
-  <p>Predicted hourly demand for bike rentals in Washington, DC using weather, time, and seasonal data. Evaluated multiple linear and non-linear regression models in R, applying log and polynomial transformations.</p>
-  <ul>
-    <li><strong>Tools:</strong> R (caret, ggplot2, lmtest)</li>
-    <li><strong>Skills:</strong> Regression modeling, cross-validation, feature engineering</li>
-    <li><strong>Outcome:</strong> Final model explained 0.82 of variance in demand; supported pricing and operations planning.</li>
-  </ul>
-</div>
+<!-- SELECTED PROJECTS -->
+<section id="projects" class="wrap" aria-labelledby="projects-title">
+  <h2 id="projects-title">Selected Projects</h2>
 
-<div class="project">
-  <h3>NATA Supermarkets – Customer Segmentation</h3>
-  <p>Performed customer profiling and segmentation using RFM analysis and clustering. Created targeted strategy recommendations based on demographic and behavioral insights.</p>
-  <ul>
-    <li><strong>Tools:</strong> Python (pandas, seaborn), RFM modeling</li>
-    <li><strong>Skills:</strong> Segmentation, data cleaning, visualization, marketing analytics</li>
-    <li><strong>Outcome:</strong> Delivered tailored strategies to retain high-spending and at-risk customers, based on product category and frequency behavior.</li>
-  </ul>
-</div>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 40px auto;
-    max-width: 900px;
-    line-height: 1.6;
-    color: #2c3e50;
-  }
-  h1, h2 {
-    color: #1a202c;
-  }
-  .project {
-    background-color: #f9f9f9;
-    border-left: 5px solid #2980b9;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-  }
-  .project h3 {
-    margin-top: 0;
-    color: #2c3e50;
-  }
-  ul {
-    list-style-type: square;
-    margin-top: 10px;
-    padding-left: 20px;
-  }
-  a {
-    color: #2980b9;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-</style>
+  <article class="project">
+    <h3>World Bank · MSBA Capstone — Climate Risk Exposure & Health Infrastructure Vulnerabilities</h3>
+    <p>Led spatial analysis for Peru, Colombia, South Africa, and Nepal using health and infrastructure data to support Disaster Risk Reduction and Recovery. Produced ranked shortlists of facilities by exposure and vulnerability.</p>
+    <p class="meta">Tools: Python, GeoPandas, K‑means · Role: Lead Analyst · 2025</p>
+    <!-- TODO: replace with real repo URL -->
+    <a href="https://github.com/fyousofi/REPO_CAPSTONE" target="_blank" rel="noopener">View on GitHub</a>
+  </article>
 
-  <!-- in your nav -->
-<a href="/Fatima_Yousofi_Resume.pdf" download>Resume</a>
-  <a href="https://github.com/fyousofi/<actual-repo>" target="_blank" rel="noopener">View on GitHub</a>
-<a href="mailto:fyousofi@...">Email</a>
+  <article class="project">
+    <h3>Predictive Modeling — LendingClub Interest Rate</h3>
+    <p>Built and compared regression tree, random forest, SVR, and neural network models to predict interest rates and support risk‑aware pricing strategies.</p>
+    <p class="meta">Tools: Python, scikit‑learn, SHAP · Role: Data Analyst · 2025</p>
+    <!-- TODO: replace with real repo URL -->
+    <a href="https://github.com/fyousofi/REPO_LENDINGCLUB" target="_blank" rel="noopener">View on GitHub</a>
+  </article>
 
-<meta name="description" content="Data & research analyst portfolio—ML, spatial risk, forecasting.">
-<meta property="og:title" content="Fatima Yousofi — Data Portfolio">
-<meta property="og:description" content="Projects in ML, spatial modeling, and ops analytics for development.">
-<meta property="og:image" content="https://fyousofi.github.io/images/og-image.png">
-<meta property="og:type" content="website">
+  <article class="project">
+    <h3>Tourism Segmentation with PCA & Clustering</h3>
+    <p>Built a market segmentation model for a European travel firm using 5,000+ Google reviews. Applied dimensionality reduction and unsupervised learning to identify traveler personas for targeted offers.</p>
+    <ul>
+      <li><strong>Tools:</strong> Python, scikit‑learn, PCA, K‑means, matplotlib</li>
+      <li><strong>Skills:</strong> Clustering, PCA, customer segmentation, data storytelling</li>
+      <li><strong>Outcome:</strong> Identified 10 traveler groups with distinct preferences (food, culture, recreation).</li>
+    </ul>
+  </article>
+
+  <article class="project">
+    <h3>Employee Attrition Prediction with ML</h3>
+    <p>Analyzed attrition drivers for a 5,000‑person company using logistic regression, random forest, and bagging; translated insights into HR actions.</p>
+    <ul>
+      <li><strong>Tools:</strong> Python, R, scikit‑learn</li>
+      <li><strong>Skills:</strong> Classification, feature selection, model evaluation (AUC, precision/recall)</li>
+      <li><strong>Outcome:</strong> Final model achieved AUC = 0.98; key predictors included income, tenure, and job satisfaction.</li>
+    </ul>
+  </article>
+
+  <article class="project">
+    <h3>Airbnb Price Prediction — Washington, DC</h3>
+    <p>Built and compared linear regression models to predict listing prices by neighborhood, room type, and property features. Performed diagnostics and inference.</p>
+    <ul>
+      <li><strong>Tools:</strong> R (lm, ggplot2)</li>
+      <li><strong>Skills:</strong> Statistical modeling, regression diagnostics, inferential analysis</li>
+      <li><strong>Outcome:</strong> Top price drivers: bedrooms (+$67), accommodates (+$19), and location (Shaw, Georgetown).</li>
+    </ul>
+  </article>
+
+  <article class="project">
+    <h3>Capital Bikeshare — Demand Forecasting</h3>
+    <p>Predicted hourly demand using weather, time, and seasonality features. Evaluated linear and non‑linear models in R with log and polynomial transforms.</p>
+    <ul>
+      <li><strong>Tools:</strong> R (caret, ggplot2, lmtest)</li>
+      <li><strong>Skills:</strong> Regression, cross‑validation, feature engineering</li>
+      <li><strong>Outcome:</strong> Final model explained 82% of variance in demand; informed pricing and operations planning.</li>
+    </ul>
+  </article>
+
+  <article class="project">
+    <h3>NATA Supermarkets — Customer Segmentation</h3>
+    <p>Performed RFM analysis and clustering to profile customers and recommend segment‑specific strategies.</p>
+    <ul>
+      <li><strong>Tools:</strong> Python (pandas, seaborn), RFM</li>
+      <li><strong>Skills:</strong> Segmentation, data cleaning, visualization, marketing analytics</li>
+      <li><strong>Outcome:</strong> Delivered retention plays for high‑spend and at‑risk segments by product category and frequency.</li>
+    </ul>
+  </article>
+</section>
+```
+
+  </main>
+
+  <footer class="wrap">
+    <small>© <span id="year"></span> Fatima Yousofi · <a href="#top">Back to top</a></small>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Optional analytics (uncomment to enable) -->
+
+  <!-- <script defer data-domain="fyousofi.github.io" src="https://plausible.io/js/script.js"></script> -->
+
+</body>
+</html>
