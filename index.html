@@ -1,59 +1,62 @@
-<!-- ABOUT -->
-<section id="about" class="wrap" aria-labelledby="about-title">
-  <h2 id="about-title">About Me</h2>
-  <p>I work at the intersection of data, economic research, operations, and development. My experience spans data analysis, research and operations, machine learning, and spatial analytics. This site highlights a few representative projects.</p>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fatima Yousofi – Data Portfolio</title>
+  <meta name="description" content="Data & research analyst portfolio—ML, spatial risk, forecasting, and operations analytics." />
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px auto; max-width: 900px; line-height: 1.6; color: #2c3e50; }
+    h1, h2 { color: #2c3e50; }
+    .topnav { display: flex; justify-content: flex-end; gap: 16px; font-size: 0.95rem; margin-bottom: 10px; }
+    .topnav a { color: #2980b9; text-decoration: none; }
+    .topnav a:hover { text-decoration: underline; }
+    .subtitle { margin-top: -8px; color: #334155; }
+    .project { background:#f9f9f9; border-left: 5px solid #2980b9; padding: 16px; margin: 16px 0; border-radius: 8px; }
+    .meta { color:#64748b; font-size: 0.95rem; margin: 4px 0 8px; }
+    .link { color:#2980b9; text-decoration:none; }
+    .link:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <!-- top-right nav -->
+  <nav class="topnav" aria-label="Primary">
+    <a href="#about">About</a>
+    <a href="/projects/" target="_blank" rel="noopener">Projects</a>
+    <a href="/docs/resume.pdf" download type="application/pdf">Resume</a>
+    <a href="mailto:fyousofi@example.com">Contact</a>
+  </nav>
 
-<!-- FEATURED (3 cards: Capstone, Airbnb, LendingClub) -->
-<section id="featured" class="wrap" aria-labelledby="featured-title">
-  <h2 id="featured-title">Featured</h2>
-  <div class="grid">
-    <!-- Capstone -->
-    <article class="card">
-      <img src="/images/capstone-banner.jpg" alt="Risk hotspots map with administrative boundaries" />
-      <div class="card-body">
-        <h3>Spatial Risk Index for Health Infrastructure</h3>
-        <p class="meta">Role: Lead Analyst · 2025</p>
-        <p>Identified high‑risk catchments and ranked health facilities for resilience investment across 4 countries using K‑means/PCA with hazard overlays and socio‑economic indicators.</p>
-        <div class="card-actions">
-          <a class="btn primary" href="/projects/capstone.html">Read case study</a>
-          <!-- TODO: replace with real repo URL -->
-          
-        </div>
-      </div>
-    </article>
+  <h1>Fatima Yousofi</h1>
+  <p class="subtitle"><strong>Data & Research Analyst</strong> | IFC – World Bank Group | M.S. Business Analytics, Georgetown University</p>
+  <p>I specialize in data-driven decision-making, research analytics, and operational strategy. My projects span machine learning, spatial and operations modeling, and analytics designed to drive real-world impact in emerging markets.</p>
 
-    <!-- Airbnb -->
-    <article class="card">
-      <img src="/images/airbnb-banner.jpg" alt="Map of Washington, DC neighborhoods with price heat shading" />
-      <div class="card-body">
-        <h3>Airbnb Price Prediction — Washington, DC</h3>
-        <p class="meta">Role: Data Analyst · 2025</p>
-        <p>Compared linear models and feature‑engineered predictors to estimate nightly prices by neighborhood, room type, and property attributes; identified top price drivers and confidence intervals.</p>
-        <div class="card-actions">
-          <a class="btn primary" href="/projects/airbnb.html">Read case study</a>
-          <!-- TODO: replace with real repo URL -->
-          
-        </div>
-      </div>
-    </article>
+  <h2>Featured Projects</h2>
 
-    <!-- LendingClub -->
-    <article class="card">
-      <img src="/images/lendingclub-banner.jpg" alt="Model performance chart comparing RMSE across algorithms" />
-      <div class="card-body">
-        <h3>LendingClub — Interest Rate Modeling</h3>
-        <p class="meta">Role: Data Analyst · 2025</p>
-        <p>Engineered features and benchmarked regression tree, random forest, SVR, and MLP models; evaluated via cross‑validated RMSE and used SHAP for interpretability.</p>
-        <div class="card-actions">
-          <a class="btn primary" href="/projects/lendingclub.html">Read case study</a>
-          <!-- TODO: replace with real repo URL -->
-          
-        </div>
-      </div>
-    </article>
+  <div class="project">
+    <h3>Spatial Risk Index for Health Infrastructure</h3>
+    <p class="meta">Role: Lead Analyst · 2025</p>
+    <p>Identified high-risk catchments and ranked health facilities for resilience investment across four countries using K-means/PCA with hazard overlays and socio-economic indicators.</p>
+    <a class="link" href="/projects/capstone.html">Read case study →</a>
   </div>
-  <p style="margin-top:16px"><a class="btn" href="/projects/" target="_blank" rel="noopener">View all projects</a></p>
-</section>
-  <p style="margin-top:16px"><a class="btn" href="/projects/" target="_blank" rel="noopener">View all projects</a></p>
-</section>
+
+  <div class="project">
+    <h3>Airbnb Price Prediction — Washington, DC</h3>
+    <p class="meta">Role: Data Analyst · 2025</p>
+    <p>Estimated nightly prices by neighborhood, room type, and property attributes; built interpretable models and quantified uncertainty with confidence intervals.</p>
+    <a class="link" href="/projects/airbnb.html">Read case study →</a>
+  </div>
+
+  <div class="project">
+    <h3>LendingClub — Interest Rate Modeling</h3>
+    <p class="meta">Role: Data Analyst · 2025</p>
+    <p>Benchmarked regression tree, random forest, SVR, and MLP models; evaluated via cross-validated RMSE and explained drivers with SHAP.</p>
+    <a class="link" href="/projects/lendingclub.html">Read case study →</a>
+  </div>
+
+  <p><a class="link" href="/projects/" target="_blank" rel="noopener">View all projects →</a></p>
+
+  <h2 id="about">About Me</h2>
+  <p>I work at the intersection of data, economic research, operations, and development. This site highlights representative projects and practical tools I've built.</p>
+</body>
+</html>
