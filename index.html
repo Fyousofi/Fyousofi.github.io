@@ -99,9 +99,9 @@
       </div>
       <nav aria-label="Primary">
         <a href="#about">About</a>
-        <a href="#projects">Projects</a>
+        <a href="/projects/">Projects</a>
         <!-- Single resume link (top-right only) -->
-        <a href="https://github.com/Fyousofi/Fyousofi.github.io/blob/main/Fatima_Yousofi_Resume%20.pdf" target="_blank" rel="noopener">Resume</a>
+        <a href="/docs/resume.pdf" download type="application/pdf">Resume</a>
         <!-- TODO: replace with your real email -->
         <a href="mailto:fyousofi@example.com">Contact</a>
       </nav>
@@ -137,7 +137,7 @@
         <div class="card-actions">
           <a class="btn primary" href="/projects/capstone.html">Read case study</a>
           <!-- TODO: replace with real repo URL -->
-          <a class="btn" href="https://github.com/fyousofi/REPO_CAPSTONE" target="_blank" rel="noopener">View on GitHub</a>
+          
         </div>
       </div>
     </article>
@@ -152,7 +152,7 @@
         <div class="card-actions">
           <a class="btn primary" href="/projects/airbnb.html">Read case study</a>
           <!-- TODO: replace with real repo URL -->
-          <a class="btn" href="https://github.com/fyousofi/REPO_AIRBNB" target="_blank" rel="noopener">View on GitHub</a>
+          
         </div>
       </div>
     </article>
@@ -167,82 +167,12 @@
         <div class="card-actions">
           <a class="btn primary" href="/projects/lendingclub.html">Read case study</a>
           <!-- TODO: replace with real repo URL -->
-          <a class="btn" href="https://github.com/fyousofi/REPO_LENDINGCLUB" target="_blank" rel="noopener">View on GitHub</a>
+          
         </div>
       </div>
     </article>
   </div>
-</section>
-
-<!-- SELECTED PROJECTS -->
-<section id="projects" class="wrap" aria-labelledby="projects-title">
-  <h2 id="projects-title">Selected Projects</h2>
-
-  <article class="project">
-    <h3>World Bank · MSBA Capstone — Climate Risk Exposure & Health Infrastructure Vulnerabilities</h3>
-    <p>Led spatial analysis for Peru, Colombia, South Africa, and Nepal using health and infrastructure data to support Disaster Risk Reduction and Recovery. Produced ranked shortlists of facilities by exposure and vulnerability.</p>
-    <p class="meta">Tools: Python, GeoPandas, K‑means · Role: Lead Analyst · 2025</p>
-    <!-- TODO: replace with real repo URL -->
-    <a href="https://github.com/fyousofi/REPO_CAPSTONE" target="_blank" rel="noopener">View on GitHub</a>
-  </article>
-
-  <article class="project">
-    <h3>LendingClub — Interest Rate Modeling</h3>
-    <p>Built and compared regression tree, random forest, SVR, and neural network models to predict interest rates and support risk‑aware pricing strategies.</p>
-    <p class="meta">Tools: Python, scikit‑learn, SHAP · Role: Data Analyst · 2025</p>
-    <!-- TODO: replace with real repo URL -->
-    <a href="https://github.com/fyousofi/REPO_LENDINGCLUB" target="_blank" rel="noopener">View on GitHub</a>
-  </article>
-
-  <article class="project">
-    <h3>Tourism Segmentation with PCA & Clustering</h3>
-    <p>Built a market segmentation model for a European travel firm using 5,000+ Google reviews. Applied dimensionality reduction and unsupervised learning to identify traveler personas for targeted offers.</p>
-    <ul>
-      <li><strong>Tools:</strong> Python, scikit‑learn, PCA, K‑means, matplotlib</li>
-      <li><strong>Skills:</strong> Clustering, PCA, customer segmentation, data storytelling</li>
-      <li><strong>Outcome:</strong> Identified 10 traveler groups with distinct preferences (food, culture, recreation).</li>
-    </ul>
-  </article>
-
-  <article class="project">
-    <h3>Employee Attrition Prediction with ML</h3>
-    <p>Analyzed attrition drivers for a 5,000‑person company using logistic regression, random forest, and bagging; translated insights into HR actions.</p>
-    <ul>
-      <li><strong>Tools:</strong> Python, R, scikit‑learn</li>
-      <li><strong>Skills:</strong> Classification, feature selection, model evaluation (AUC, precision/recall)</li>
-      <li><strong>Outcome:</strong> Final model achieved AUC = 0.98; key predictors included income, tenure, and job satisfaction.</li>
-    </ul>
-  </article>
-
-  <article class="project">
-    <h3>Airbnb Price Prediction — Washington, DC</h3>
-    <p>Built and compared linear regression models to predict listing prices by neighborhood, room type, and property features. Performed diagnostics and inference.</p>
-    <ul>
-      <li><strong>Tools:</strong> R (lm, ggplot2)</li>
-      <li><strong>Skills:</strong> Statistical modeling, regression diagnostics, inferential analysis</li>
-      <li><strong>Outcome:</strong> Top price drivers: bedrooms (+$67), accommodates (+$19), and location (Shaw, Georgetown).</li>
-    </ul>
-  </article>
-
-  <article class="project">
-    <h3>Capital Bikeshare — Demand Forecasting</h3>
-    <p>Predicted hourly demand using weather, time, and seasonality features. Evaluated linear and non‑linear models in R with log and polynomial transforms.</p>
-    <ul>
-      <li><strong>Tools:</strong> R (caret, ggplot2, lmtest)</li>
-      <li><strong>Skills:</strong> Regression, cross‑validation, feature engineering</li>
-      <li><strong>Outcome:</strong> Final model explained 82% of variance in demand; informed pricing and operations planning.</li>
-    </ul>
-  </article>
-
-  <article class="project">
-    <h3>NATA Supermarkets — Customer Segmentation</h3>
-    <p>Performed RFM analysis and clustering to profile customers and recommend segment‑specific strategies.</p>
-    <ul>
-      <li><strong>Tools:</strong> Python (pandas, seaborn), RFM</li>
-      <li><strong>Skills:</strong> Segmentation, data cleaning, visualization, marketing analytics</li>
-      <li><strong>Outcome:</strong> Delivered retention plays for high‑spend and at‑risk segments by product category and frequency.</li>
-    </ul>
-  </article>
+  <p style="margin-top:16px"><a class="btn" href="/projects/">View all projects</a></p>
 </section>
 ```
 
@@ -265,9 +195,99 @@
 
 <!-- ============================= -->
 
-<!--  Case Study Pages (copy below into separate files)  -->
+<!--  Case Study Pages (copy into separate files)  -->
 
 <!-- ============================= -->
+
+<!-- /projects/index.html (All Projects page) -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects | Fatima Yousofi</title>
+  <meta name="description" content="All analytics and research projects by Fatima Yousofi." />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <style>
+    /* Inline minimal styles if /css/styles.css not yet created */
+    :root{--border:#e5e7eb; --card:#f9fafb; --radius:16px; --gap:1.25rem; --shadow:0 2px 14px rgba(0,0,0,.06)}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial; margin:0; color:#111827}
+    .wrap{max-width:1040px; margin:0 auto; padding:24px}
+    .grid{display:grid; gap:var(--gap); grid-template-columns:repeat(auto-fill, minmax(310px, 1fr))}
+    .card{background:var(--card); border:1px solid var(--border); border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow)}
+    .card img{width:100%; height:160px; object-fit:cover; background:#eef2f7}
+    .card-body{padding:16px}
+    .meta{color:#6b7280; font-size:.92rem; margin:.15rem 0 .6rem}
+    .card-actions{display:flex; gap:.5rem; flex-wrap:wrap; margin-top:.5rem}
+    header.nav{border-bottom:1px solid var(--border)}
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap" style="display:flex;align-items:center;justify-content:space-between">
+      <a href="/" aria-label="Home"><strong>← Home</strong></a>
+      <nav>
+        <a href="/docs/resume.pdf" download type="application/pdf">Resume</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <h1>All Projects</h1>
+    <p class="meta">A broader set beyond the featured work on the homepage.</p>
+
+```
+<div class="grid">
+  <!-- Tourism Segmentation -->
+  <article class="card">
+    <img src="/images/tourism-banner.jpg" alt="Clusters of tourist personas from reviews" />
+    <div class="card-body">
+      <h3>Tourism Segmentation with PCA & Clustering</h3>
+      <p class="meta">Role: Data Analyst · Tools: Python, PCA, K‑means</p>
+      <p>Segmented 5,000+ reviews to identify personas and inform targeted offers; 10 groups with distinct preferences.</p>
+      
+    </div>
+  </article>
+
+  <!-- Employee Attrition -->
+  <article class="card">
+    <img src="/images/attrition-banner.jpg" alt="Feature importance chart for attrition" />
+    <div class="card-body">
+      <h3>Employee Attrition Prediction</h3>
+      <p class="meta">Role: Data Analyst · Tools: Python, R, scikit‑learn</p>
+      <p>Modeled attrition with logistic regression, RF, and bagging; AUC = 0.98 and clear drivers for HR actions.</p>
+      
+    </div>
+  </article>
+
+  <!-- Capital Bikeshare -->
+  <article class="card">
+    <img src="/images/bikeshare-banner.jpg" alt="Bike usage over time line chart" />
+    <div class="card-body">
+      <h3>Capital Bikeshare — Demand Forecasting</h3>
+      <p class="meta">Role: Data Analyst · Tools: R (caret, ggplot2, lmtest)</p>
+      <p>Predicted hourly demand using weather, time, and seasonal effects; 82% variance explained.</p>
+      
+    </div>
+  </article>
+
+  <!-- NATA Supermarkets -->
+  <article class="card">
+    <img src="/images/nata-banner.jpg" alt="Customer segments by spend and frequency" />
+    <div class="card-body">
+      <h3>NATA Supermarkets — Customer Segmentation</h3>
+      <p class="meta">Role: Data Analyst · Tools: Python (pandas, seaborn), RFM</p>
+      <p>RFM‑based segmentation and strategies for retention and growth by product mix and frequency.</p>
+      
+    </div>
+  </article>
+</div>
+```
+
+  </main>
+</body>
+</html>
 
 <!-- /projects/capstone.html -->
 
@@ -282,7 +302,7 @@
   <link rel="stylesheet" href="/css/styles.css" />
 </head>
 <body>
-  <header class="site-header"><nav class="wrap"><a href="/">Home</a> · <a href="https://github.com/Fyousofi/Fyousofi.github.io/blob/main/Fatima_Yousofi_Resume%20.pdf" target="_blank" rel="noopener">Resume</a></nav></header>
+  <header class="site-header"><nav class="wrap"><a href="/">Home</a> · <a href="/docs/resume.pdf" download type="application/pdf">Resume</a></nav></header>
   <main class="wrap">
     <article class="case-study">
       <header>
@@ -316,10 +336,11 @@
         <li>Stability analysis across K and distance metrics</li>
         <li>Scenario planning for phased investments</li>
       </ul>
-      <p class="case-links">
-        <a class="btn" href="https://github.com/fyousofi/REPO_CAPSTONE" target="_blank" rel="noopener">Repository</a>
-      </p>
-    </article>
+
+```
+</article>
+```
+
   </main>
   <footer class="wrap"><small>© <span id="year1"></span> Fatima Yousofi</small></footer>
   <script>document.getElementById('year1').textContent = new Date().getFullYear();</script>
@@ -339,7 +360,7 @@
   <link rel="stylesheet" href="/css/styles.css" />
 </head>
 <body>
-  <header class="site-header"><nav class="wrap"><a href="/">Home</a> · <a href="https://github.com/Fyousofi/Fyousofi.github.io/blob/main/Fatima_Yousofi_Resume%20.pdf" target="_blank" rel="noopener">Resume</a></nav></header>
+  <header class="site-header"><nav class="wrap"><a href="/">Home</a> · <a href="/docs/resume.pdf" download type="application/pdf">Resume</a></nav></header>
   <main class="wrap">
     <article class="case-study">
       <header>
@@ -371,10 +392,11 @@
         <li>Add seasonality and event calendars; explore mixed effects by neighborhood</li>
         <li>Benchmark tree‑based models to capture non‑linearities</li>
       </ul>
-      <p class="case-links">
-        <a class="btn" href="https://github.com/fyousofi/REPO_AIRBNB" target="_blank" rel="noopener">Repository</a>
-      </p>
-    </article>
+
+```
+</article>
+```
+
   </main>
   <footer class="wrap"><small>© <span id="year2"></span> Fatima Yousofi</small></footer>
   <script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
@@ -394,7 +416,7 @@
   <link rel="stylesheet" href="/css/styles.css" />
 </head>
 <body>
-  <header class="site-header"><nav class="wrap"><a href="/">Home</a> · <a href="https://github.com/Fyousofi/Fyousofi.github.io/blob/main/Fatima_Yousofi_Resume%20.pdf" target="_blank" rel="noopener">Resume</a></nav></header>
+  <header class="site-header"><nav class="wrap"><a href="/">Home</a> · <a href="/docs/resume.pdf" download type="application/pdf">Resume</a></nav></header>
   <main class="wrap">
     <article class="case-study">
       <header>
@@ -426,10 +448,11 @@
         <li>Hyperparameter tuning with Bayesian search; add monotonic constraints</li>
         <li>Back‑testing stability across vintages; partial dependence for policy levers</li>
       </ul>
-      <p class="case-links">
-        <a class="btn" href="https://github.com/fyousofi/REPO_LENDINGCLUB" target="_blank" rel="noopener">Repository</a>
-      </p>
-    </article>
+
+```
+</article>
+```
+
   </main>
   <footer class="wrap"><small>© <span id="year3"></span> Fatima Yousofi</small></footer>
   <script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
@@ -442,10 +465,13 @@ HOW TO ADD PICTURES
    /images/capstone-banner.jpg
    /images/airbnb-banner.jpg
    /images/lendingclub-banner.jpg
+   /images/tourism-banner.jpg
+   /images/attrition-banner.jpg
+   /images/bikeshare-banner.jpg
+   /images/nata-banner.jpg
    Tip: Use 1200×675 (16:9), keep each < 200KB, filenames lowercase-with-hyphens.
 2) Reference them in HTML with absolute paths from site root:
    <img src="/images/capstone-banner.jpg" alt="Risk hotspots overlay" />
 3) Commit & push. GitHub Pages will auto-deploy. Hard refresh (Ctrl/Cmd + Shift + R) to see updates.
-4) For thumbnails on cards, ensure the <img> appears inside the .card as shown above.
-5) For social preview, create /images/og-image.png and ensure the <meta property="og:image" ...> tag points to it.
+4) For social preview, create /images/og-image.png and ensure the <meta property="og:image" ...> tag points to it.
 -->
