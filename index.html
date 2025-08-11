@@ -38,14 +38,10 @@
     .nav a:last-child{margin-right:0}
 
     /* Hero */
-    .hero{padding:48px 24px 24px}
+    .hero{padding:48px 24px 12px}
     .hero h1{font-size:clamp(28px, 5vw, 40px); margin:0 0 .25rem 0}
     .subtitle{color:var(--muted); margin:.25rem 0 1rem}
     .lead{max-width:70ch; color:#1f2937}
-    .cta{margin-top:1rem}
-    .btn{display:inline-block; padding:.65rem 1rem; border-radius:12px; border:1px solid var(--border); box-shadow:var(--shadow)}
-    .btn + .btn{margin-left:.5rem}
-    .btn.primary{background:var(--brand); color:#fff; border-color:var(--brand)}
 
     /* Sections */
     section{padding:24px}
@@ -87,13 +83,15 @@
     ],
     "worksFeatured": [
       {"@type": "CreativeWork", "name": "Spatial Risk Index for Health Infrastructure", "url": "https://fyousofi.github.io/projects/capstone.html"},
-      {"@type": "CreativeWork", "name": "LendingClub Default Risk Modeling", "url": "https://fyousofi.github.io/projects/lendingclub.html"}
+      {"@type": "CreativeWork", "name": "Airbnb Price Prediction — Washington, DC", "url": "https://fyousofi.github.io/projects/airbnb.html"},
+      {"@type": "CreativeWork", "name": "LendingClub Interest Rate Modeling", "url": "https://fyousofi.github.io/projects/lendingclub.html"}
     ]
   }
   </script>
 
 </head>
 <body>
+  <a id="top" class="sr-only">Top</a>
   <header class="site-header" role="banner">
     <div class="nav wrap">
       <div>
@@ -102,7 +100,8 @@
       <nav aria-label="Primary">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
-        <a href="/https://github.com/Fyousofi/Fyousofi.github.io/blob/main/Fatima_Yousofi_Resume%20.pdf" download>Resume</a>
+        <!-- Single resume link (top-right only) -->
+        <a href="https://github.com/Fyousofi/Fyousofi.github.io/blob/main/Fatima_Yousofi_Resume%20.pdf" target="_blank" rel="noopener">Resume</a>
         <!-- TODO: replace with your real email -->
         <a href="mailto:fyousofi@example.com">Contact</a>
       </nav>
@@ -110,17 +109,11 @@
   </header>
 
   <main id="main-content">
-    <!-- HERO -->
+    <!-- HERO (buttons removed per request) -->
     <section class="hero wrap" aria-labelledby="home-title">
       <h1 id="home-title">Fatima Yousofi</h1>
       <p class="subtitle"><strong>Data & Research Analyst</strong> · IFC — World Bank Group · M.S. Business Analytics, Georgetown University</p>
       <p class="lead">I specialize in data‑driven decision‑making across development, research, and operations. My work spans machine learning, spatial risk modeling, and analytics designed to drive real‑world impact in emerging markets.</p>
-      <div class="cta" role="group" aria-label="Primary actions">
-        <a class="btn primary" href="/docs/resume.pdf" download>Download Resume</a>
-        <a class="btn" href="#projects">View Projects</a>
-        <!-- TODO: replace with your real email -->
-        <a class="btn" href="mailto:fyousofi@example.com">Contact</a>
-      </div>
     </section>
 
 ```
@@ -130,7 +123,7 @@
   <p>I work at the intersection of data, economic research, operations, and development. My experience spans data analysis, research and operations, machine learning, and spatial analytics. This site highlights a few representative projects.</p>
 </section>
 
-<!-- FEATURED -->
+<!-- FEATURED (3 cards: Capstone, Airbnb, LendingClub) -->
 <section id="featured" class="wrap" aria-labelledby="featured-title">
   <h2 id="featured-title">Featured</h2>
   <div class="grid">
@@ -149,13 +142,28 @@
       </div>
     </article>
 
+    <!-- Airbnb -->
+    <article class="card">
+      <img src="/images/airbnb-banner.jpg" alt="Map of Washington, DC neighborhoods with price heat shading" />
+      <div class="card-body">
+        <h3>Airbnb Price Prediction — Washington, DC</h3>
+        <p class="meta">Role: Data Analyst · 2025</p>
+        <p>Compared linear models and feature‑engineered predictors to estimate nightly prices by neighborhood, room type, and property attributes; identified top price drivers and confidence intervals.</p>
+        <div class="card-actions">
+          <a class="btn primary" href="/projects/airbnb.html">Read case study</a>
+          <!-- TODO: replace with real repo URL -->
+          <a class="btn" href="https://github.com/fyousofi/REPO_AIRBNB" target="_blank" rel="noopener">View on GitHub</a>
+        </div>
+      </div>
+    </article>
+
     <!-- LendingClub -->
     <article class="card">
-      <img src="/images/lendingclub-banner.jpg" alt="Model performance chart comparing RMSE/AUC across algorithms" />
+      <img src="/images/lendingclub-banner.jpg" alt="Model performance chart comparing RMSE across algorithms" />
       <div class="card-body">
-        <h3>Default Risk Modeling — LendingClub</h3>
+        <h3>LendingClub — Interest Rate Modeling</h3>
         <p class="meta">Role: Data Analyst · 2025</p>
-        <p>Engineered features and benchmarked RF / SVR / MLP models to predict default risk; improved AUC to 0.82 with calibrated thresholds for policy scenarios.</p>
+        <p>Engineered features and benchmarked regression tree, random forest, SVR, and MLP models; evaluated via cross‑validated RMSE and used SHAP for interpretability.</p>
         <div class="card-actions">
           <a class="btn primary" href="/projects/lendingclub.html">Read case study</a>
           <!-- TODO: replace with real repo URL -->
@@ -179,7 +187,7 @@
   </article>
 
   <article class="project">
-    <h3>Predictive Modeling — LendingClub Interest Rate</h3>
+    <h3>LendingClub — Interest Rate Modeling</h3>
     <p>Built and compared regression tree, random forest, SVR, and neural network models to predict interest rates and support risk‑aware pricing strategies.</p>
     <p class="meta">Tools: Python, scikit‑learn, SHAP · Role: Data Analyst · 2025</p>
     <!-- TODO: replace with real repo URL -->
@@ -241,7 +249,7 @@
   </main>
 
   <footer class="wrap">
-    <small>© <span id="year"></span> Fatima Yousofi · <a href="#top">Back to top</a></small>
+    <small>© <span id="year"></span> Fatima Yousofi · <a href="#home-title">Back to top</a></small>
   </footer>
 
   <script>
@@ -254,3 +262,190 @@
 
 </body>
 </html>
+
+<!-- ============================= -->
+
+<!--  Case Study Pages (copy below into separate files)  -->
+
+<!-- ============================= -->
+
+<!-- /projects/capstone.html -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spatial Risk Index — Case Study | Fatima Yousofi</title>
+  <meta name="description" content="Spatial risk index for health infrastructure across four countries; clustering and validation for resilience planning." />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <header class="site-header"><nav class="wrap"><a href="/">Home</a> · <a href="https://github.com/Fyousofi/Fyousofi.github.io/blob/main/Fatima_Yousofi_Resume%20.pdf" target="_blank" rel="noopener">Resume</a></nav></header>
+  <main class="wrap">
+    <article class="case-study">
+      <header>
+        <h1>Spatial Risk Index for Health Infrastructure</h1>
+        <p class="meta">Role: Lead Analyst · 2025 · Tools: Python, R, GIS</p>
+        <img src="/images/capstone-banner.jpg" alt="Risk hotspots overlayed on administrative boundaries">
+      </header>
+      <h2>Problem</h2>
+      <p>Decision makers needed a ranked list of health facilities exposed to floods/landslides to prioritize resilience funding.</p>
+      <h2>Data</h2>
+      <ul>
+        <li>Health facilities: capacity, distance to PHC/hospital</li>
+        <li>Hazard layers: flood, landslide; admin codes (A1–A3)</li>
+        <li>Socio‑economic indicators: poverty, malnutrition, literacy</li>
+      </ul>
+      <h2>Methods</h2>
+        <p>K‑means on standardized features; PCA for visualization; cosine similarity to composite risk profile; holdout validation.</p>
+      <h2>Results</h2>
+      <ul>
+        <li>Top decile facilities captured a disproportionate share of modeled exposure</li>
+        <li>Reduced false positives vs. baseline prioritization approach</li>
+        <li>Generated ranked shortlist and map for operations teams</li>
+      </ul>
+      <h2>Impact</h2>
+      <p>Provided an actionable pipeline for WBG teams to stage investments by district and facility tier, aligned with resilience KPIs.</p>
+      <h2>Limitations</h2>
+      <p>Availability of geospatial layers varies by country; sensitivity to feature scaling and administrative boundary quality.</p>
+      <h2>Next steps</h2>
+      <ul>
+        <li>Incorporate storm surge/earthquake layers where available</li>
+        <li>Stability analysis across K and distance metrics</li>
+        <li>Scenario planning for phased investments</li>
+      </ul>
+      <p class="case-links">
+        <a class="btn" href="https://github.com/fyousofi/REPO_CAPSTONE" target="_blank" rel="noopener">Repository</a>
+      </p>
+    </article>
+  </main>
+  <footer class="wrap"><small>© <span id="year1"></span> Fatima Yousofi</small></footer>
+  <script>document.getElementById('year1').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
+<!-- /projects/airbnb.html -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Airbnb Price Prediction — Case Study | Fatima Yousofi</title>
+  <meta name="description" content="Predicting Airbnb listing prices in Washington, DC using regression models and feature analysis." />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <header class="site-header"><nav class="wrap"><a href="/">Home</a> · <a href="https://github.com/Fyousofi/Fyousofi.github.io/blob/main/Fatima_Yousofi_Resume%20.pdf" target="_blank" rel="noopener">Resume</a></nav></header>
+  <main class="wrap">
+    <article class="case-study">
+      <header>
+        <h1>Airbnb Price Prediction — Washington, DC</h1>
+        <p class="meta">Role: Data Analyst · 2025 · Tools: R (lm, ggplot2)</p>
+        <img src="/images/airbnb-banner.jpg" alt="Price distribution across DC neighborhoods">
+      </header>
+      <h2>Problem</h2>
+      <p>Estimate nightly prices for Airbnb listings to understand price drivers and support data‑informed pricing guidelines.</p>
+      <h2>Data</h2>
+      <ul>
+        <li>Public Airbnb DC listings: neighborhood, room type, bedrooms, accommodates, amenities</li>
+        <li>Filtered outliers and missing prices; standardized categorical encodings</li>
+      </ul>
+      <h2>Methods</h2>
+      <p>Compared linear regression specifications with interaction terms and log transforms; performed diagnostics (residual plots, heteroskedasticity checks) and built confidence intervals for key coefficients.</p>
+      <h2>Results</h2>
+      <ul>
+        <li>Top price drivers: bedrooms (+$67), accommodates (+$19), and location (e.g., Shaw, Georgetown)</li>
+        <li>Model residuals approximately normal after log transformation; VIF checks showed acceptable multicollinearity</li>
+        <li>Confidence intervals quantified uncertainty for driver effects</li>
+      </ul>
+      <h2>Impact</h2>
+      <p>Clarified how property and location features translate into price differences, enabling transparent pricing strategies for hosts or analysts.</p>
+      <h2>Limitations</h2>
+      <p>Listings data may include unobserved amenities and seasonal effects; cross‑sectional snapshot limits generalization across time.</p>
+      <h2>Next steps</h2>
+      <ul>
+        <li>Add seasonality and event calendars; explore mixed effects by neighborhood</li>
+        <li>Benchmark tree‑based models to capture non‑linearities</li>
+      </ul>
+      <p class="case-links">
+        <a class="btn" href="https://github.com/fyousofi/REPO_AIRBNB" target="_blank" rel="noopener">Repository</a>
+      </p>
+    </article>
+  </main>
+  <footer class="wrap"><small>© <span id="year2"></span> Fatima Yousofi</small></footer>
+  <script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
+<!-- /projects/lendingclub.html -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LendingClub — Interest Rate Modeling | Fatima Yousofi</title>
+  <meta name="description" content="Benchmarking regression models to predict LendingClub interest rates with interpretable insights." />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <header class="site-header"><nav class="wrap"><a href="/">Home</a> · <a href="https://github.com/Fyousofi/Fyousofi.github.io/blob/main/Fatima_Yousofi_Resume%20.pdf" target="_blank" rel="noopener">Resume</a></nav></header>
+  <main class="wrap">
+    <article class="case-study">
+      <header>
+        <h1>LendingClub — Interest Rate Modeling</h1>
+        <p class="meta">Role: Data Analyst · 2025 · Tools: Python, scikit‑learn, SHAP</p>
+        <img src="/images/lendingclub-banner.jpg" alt="RMSE comparison across regression models">
+      </header>
+      <h2>Problem</h2>
+      <p>Predict interest rates from borrower and loan features to support risk‑aware pricing.</p>
+      <h2>Data</h2>
+      <ul>
+        <li>LendingClub dataset: loan amount, term, grade, employment length, income, purpose, etc.</li>
+        <li>Train/validation split with stratification over loan grade</li>
+      </ul>
+      <h2>Methods</h2>
+      <p>Benchmarked regression tree, random forest, SVR, and MLP; cross‑validated using repeated K‑fold; standardized/encoded features; SHAP values for model explainability.</p>
+      <h2>Results</h2>
+      <ul>
+        <li>Model selection based on lowest cross‑validated RMSE and stability</li>
+        <li>SHAP showed credit grade, income, and term as dominant drivers</li>
+        <li>Calibration curves flagged mild under‑prediction at higher rates</li>
+      </ul>
+      <h2>Impact</h2>
+      <p>Delivered an interpretable baseline for pricing analysis and scenario testing under portfolio constraints.</p>
+      <h2>Limitations</h2>
+      <p>Interest rate policies vary by time; historical shifts and macro cycles may affect generalization.</p>
+      <h2>Next steps</h2>
+      <ul>
+        <li>Hyperparameter tuning with Bayesian search; add monotonic constraints</li>
+        <li>Back‑testing stability across vintages; partial dependence for policy levers</li>
+      </ul>
+      <p class="case-links">
+        <a class="btn" href="https://github.com/fyousofi/REPO_LENDINGCLUB" target="_blank" rel="noopener">Repository</a>
+      </p>
+    </article>
+  </main>
+  <footer class="wrap"><small>© <span id="year3"></span> Fatima Yousofi</small></footer>
+  <script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
+<!--
+HOW TO ADD PICTURES
+1) Add files to your repo under /images (recommended):
+   /images/capstone-banner.jpg
+   /images/airbnb-banner.jpg
+   /images/lendingclub-banner.jpg
+   Tip: Use 1200×675 (16:9), keep each < 200KB, filenames lowercase-with-hyphens.
+2) Reference them in HTML with absolute paths from site root:
+   <img src="/images/capstone-banner.jpg" alt="Risk hotspots overlay" />
+3) Commit & push. GitHub Pages will auto-deploy. Hard refresh (Ctrl/Cmd + Shift + R) to see updates.
+4) For thumbnails on cards, ensure the <img> appears inside the .card as shown above.
+5) For social preview, create /images/og-image.png and ensure the <meta property="og:image" ...> tag points to it.
+-->
