@@ -1,37 +1,72 @@
-<div class="grid">
-  <article class="card">
-    <img src="/images/tourism-banner.jpg" alt="Clusters of tourist personas from reviews" />
-    <div class="card-body">
-      <h3>Tourism Segmentation with PCA & Clustering</h3>
-      <p class="meta">Role: Data Analyst · Tools: Python, PCA, K‑means</p>
-      <p>Segmented 5,000+ reviews to identify personas and inform targeted offers; 10 groups with distinct preferences.</p>
-    </div>
-  </article>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects — Fatima Yousofi</title>
+  <meta name="description" content="A concise, visual list of projects by Fatima Yousofi." />
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px auto; max-width: 900px; line-height: 1.6; color: #2c3e50; }
+    h1, h2 { color: #2c3e50; }
+    a { color:#2980b9; text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+    .topbar { display:flex; justify-content: space-between; align-items:center; margin-bottom: 20px; }
+    .proj { margin: 28px 0; }
+    .proj img { width: 100%; height: auto; border-radius: 8px; margin-top: 10px; }
+    .meta { color:#64748b; font-size: 0.95rem; margin: 4px 0 8px; }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <a href="/">← Home</a>
+    <a href="/docs/resume.pdf" download type="application/pdf">Download Resume</a>
+  </div>
 
-  <article class="card">
-    <img src="/images/attrition-banner.jpg" alt="Feature importance chart for attrition" />
-    <div class="card-body">
-      <h3>Employee Attrition Prediction</h3>
-      <p class="meta">Role: Data Analyst · Tools: Python, R, scikit‑learn</p>
-      <p>Modeled attrition with logistic regression, RF, and bagging; AUC = 0.98 and clear drivers for HR actions.</p>
-    </div>
-  </article>
+  <h1>Projects</h1>
 
-  <article class="card">
-    <img src="/images/bikeshare-banner.jpg" alt="Bike usage over time line chart" />
-    <div class="card-body">
-      <h3>Capital Bikeshare — Demand Forecasting</h3>
-      <p class="meta">Role: Data Analyst · Tools: R (caret, ggplot2, lmtest)</p>
-      <p>Predicted hourly demand using weather, time, and seasonal effects; 82% variance explained.</p>
-    </div>
-  </article>
+  <section class="proj">
+    <h2>LA Crime Analysis</h2>
+    <p class="meta">Tools: Python, Tableau</p>
+    <p>Reviewed Los Angeles crime reports (2010–2023) to surface trends and hotspots; produced interactive dashboards and a short summary report for non-technical audiences.</p>
+    <img src="/images/la-crime-thumbnail.jpg" alt="Thumbnail for LA Crime Analysis dashboard" />
+  </section>
 
-  <article class="card">
-    <img src="/images/nata-banner.jpg" alt="Customer segments by spend and frequency" />
-    <div class="card-body">
-      <h3>NATA Supermarkets — Customer Segmentation</h3>
-      <p class="meta">Role: Data Analyst · Tools: Python (pandas, seaborn), RFM</p>
-      <p>RFM‑based segmentation and strategies for retention and growth by product mix and frequency.</p>
-    </div>
-  </article>
-</div>
+  <section class="proj">
+    <h2>Capital Bikeshare Trend Analysis</h2>
+    <p class="meta">Tools: SQL, Tableau</p>
+    <p>Analyzed pre-/post-COVID bike usage to identify demand shifts, station-level changes, and opportunities to increase ridership.</p>
+    <img src="/images/bikeshare-banner.jpg" alt="Capital Bikeshare usage trend chart" />
+  </section>
+
+  <section class="proj">
+    <h2>Airbnb Trend Analysis</h2>
+    <p class="meta">Tools: PowerBI, Excel</p>
+    <p>Explored Philadelphia listings to compare long-term vs. short-term rental scenarios; synthesized findings into a clear recommendation framework for hosts.</p>
+    <img src="/images/airbnb-banner.jpg" alt="Airbnb price heatmap across neighborhoods" />
+  </section>
+
+  <section class="proj">
+    <h2>World Bank · Spatial Risk Index (Featured)</h2>
+    <p class="meta">Tools: Python, R, GIS</p>
+    <p>Ranked health facilities by exposure and vulnerability across four countries; produced investment shortlists and maps for operations teams.</p>
+    <img src="/images/capstone-banner.jpg" alt="Risk hotspots map with administrative boundaries" />
+    <p><a href="/projects/capstone.html">Read case study →</a></p>
+  </section>
+
+  <section class="proj">
+    <h2>Airbnb Price Prediction — Washington, DC (Featured)</h2>
+    <p class="meta">Tools: R</p>
+    <p>Estimated nightly prices by neighborhood and property features; identified price drivers with interpretable models.</p>
+    <img src="/images/airbnb-banner.jpg" alt="DC neighborhoods price chart" />
+    <p><a href="/projects/airbnb.html">Read case study →</a></p>
+  </section>
+
+  <section class="proj">
+    <h2>LendingClub — Interest Rate Modeling (Featured)</h2>
+    <p class="meta">Tools: Python, scikit-learn</p>
+    <p>Benchmarked models for interest rate prediction; explained drivers and tradeoffs for pricing strategies.</p>
+    <img src="/images/lendingclub-banner.jpg" alt="RMSE comparison across regression models" />
+    <p><a href="/projects/lendingclub.html">Read case study →</a></p>
+  </section>
+</body>
+</html>
