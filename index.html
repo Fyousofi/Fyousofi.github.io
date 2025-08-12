@@ -157,18 +157,18 @@
 <div class="divider"></div>
 
   <div class="intro">
-  <img
-    <img
+<img
   src="https://raw.githubusercontent.com/Fyousofi/Fyousofi.github.io/main/Image%20(3).jpg"
   alt="Fatima Yousofi"
   class="intro__photo"
-  style="width:118px;height:118px;border-radius:50%;object-fit:cover;object-position:center;box-shadow:0 4px 12px rgba(0,0,0,.08);border:2px solid rgba(0,0,0,.06);"
   loading="eager" decoding="async">
+
   <div class="intro__text">
     <!-- keep your current bio text here, unchanged -->
-    Data & Research Analyst focused on turning messy data into decisions for development.
-    I build models and stories leaders can act on—spanning ML, spatial analysis, and customer analytics.
-    Currently at IFC; M.S. in Business Analytics @ Georgetown.
+<p>From Kabul to data science, I’ve learned to embrace every challenge and turn it into momentum.</p>
+<p>I’m a Data & Research Analyst working where economics development and operations meet—building transparent, decision-ready models that help teams act.</p>
+<p>My interests center on data-driven economic development research and operational strategy; my toolkit spans Python/R, machine learning, spatial analysis, and explainable modeling, always wrapped in clear, human-centered storytelling.</p>
+
   </div>
     
   <h2>Featured Projects</h2>
@@ -210,20 +210,27 @@
 </body>
 </html>
 
-/* Intro photo override */
-.intro img.intro__photo {
-  width: 118px !important;
-  height: 118px !important;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,.08);
-  border: 2px solid rgba(0,0,0,.06);
+/* Intro layout: photo left, bio right */
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 8px 0 12px;
 }
 
-/* Optional: slightly tighten photo/text spacing */
-.intro { gap: 12px; }
+/* Photo crop & size — overrides any global img { width:100% } */
+.intro__photo {
+  width: 120px !important;
+  height: 120px !important;
+  border-radius: 50%;          /* circle; change to 14px for rounded square */
+  object-fit: cover;
+  object-position: 50% 20%;    /* <-- shift crop UP to keep the top of your head in frame */
+  border: 2px solid rgba(0,0,0,.06);
+  box-shadow: 0 4px 12px rgba(0,0,0,.08);
+}
+
+/* Keep it tidy on phones */
 @media (max-width: 640px) {
-  .intro img.intro__photo { width: 92px !important; height: 92px !important; }
   .intro { gap: 10px; }
+  .intro__photo { width: 96px !important; height: 96px !important; }
 }
