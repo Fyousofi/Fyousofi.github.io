@@ -128,6 +128,16 @@
     .topbar a:hover{ background:#152243 }
   }
 </style>
+
+  <style>
+/* same CSS as above */
+body:not(.projects) .project,
+body:not(.projects) .project-card{background:transparent!important;border:0!important;box-shadow:none!important;padding:0!important}
+body:not(.projects) .project{font-family:Calibri,"Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;font-size:.98rem;line-height:1.55}
+body:not(.projects) .project h3{font:inherit;font-weight:700;font-size:1.08rem;margin:6px 0 4px}
+body:not(.projects) .project .meta{font-size:.92rem;opacity:.85;margin:2px 0 8px}
+body:not(.projects) .project p{margin:4px 0 8px}
+</style>
   
 </head>
 <body>
@@ -201,36 +211,3 @@
 </body>
 </html>
 
-/* ===== Home page: flatten Featured Projects cards & tweak type ===== */
-body:not(.projects) .project,
-body:not(.projects) .project-card {
-  background: transparent !important;
-  border: 0 !important;
-  box-shadow: none !important;
-  padding: 0 !important;
-}
-
-/* Calibri + slightly smaller than intro/headings */
-body:not(.projects) .project {
-  font-family: Calibri, "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
-  font-size: 0.98rem;
-  line-height: 1.55;
-}
-
-/* Project titles & meta */
-body:not(.projects) .project h3 {
-  font: inherit;
-  font-weight: 700;
-  font-size: 1.08rem;
-  margin: 6px 0 4px;
-}
-body:not(.projects) .project .meta { 
-  font-size: 0.92rem; 
-  opacity: 0.85; 
-  margin: 2px 0 8px; 
-}
-
-/* Paragraph spacing inside projects */
-body:not(.projects) .project p { 
-  margin: 4px 0 8px; 
-}
