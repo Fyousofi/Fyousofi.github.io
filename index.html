@@ -158,11 +158,12 @@
 
   <div class="intro">
   <img
-    src="https://raw.githubusercontent.com/Fyousofi/Fyousofi.github.io/main/Image%20(3).jpg"
-    alt="Fatima Yousofi"
-    class="intro__photo"
-    width="160" height="160"
-    loading="eager" decoding="async">
+    <img
+  src="https://raw.githubusercontent.com/Fyousofi/Fyousofi.github.io/main/Image%20(3).jpg"
+  alt="Fatima Yousofi"
+  class="intro__photo"
+  style="width:118px;height:118px;border-radius:50%;object-fit:cover;object-position:center;box-shadow:0 4px 12px rgba(0,0,0,.08);border:2px solid rgba(0,0,0,.06);"
+  loading="eager" decoding="async">
   <div class="intro__text">
     <!-- keep your current bio text here, unchanged -->
     Data & Research Analyst focused on turning messy data into decisions for development.
@@ -208,3 +209,21 @@
   <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
 </html>
+
+/* Intro photo override */
+.intro img.intro__photo {
+  width: 118px !important;
+  height: 118px !important;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,.08);
+  border: 2px solid rgba(0,0,0,.06);
+}
+
+/* Optional: slightly tighten photo/text spacing */
+.intro { gap: 12px; }
+@media (max-width: 640px) {
+  .intro img.intro__photo { width: 92px !important; height: 92px !important; }
+  .intro { gap: 10px; }
+}
