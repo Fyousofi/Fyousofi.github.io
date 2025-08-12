@@ -40,10 +40,7 @@
       <a href="/">← Home</a>
       <a href="/projects/">Projects</a>
       <span style="flex:1"></span>
-      <a href="https://github.com/Fyousofi/Fyousofi.github.io/blob/main/Fatima_Yousofi_Resume%20.pdf?raw=1" target="_blank" rel="noopener">Resume</a>
-      <a href="https://www.linkedin.com/in/fatima-yousofi/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="/#contact">Contact</a>
-    </div>
+ </div>
   </header>
 
   <main class="container">
@@ -251,5 +248,355 @@
     // year stamp
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects — Fatima Yousofi</title>
+
+  <!-- Load the SAME base stylesheet as your home page (adjust path if needed) -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <!-- Projects overrides for darker blue + cards -->
+  <link rel="stylesheet" href="/assets/css/projects.css">
+
+  <style>
+    /* Scoped extras for the unified page */
+    body.projects .jump { margin: 8px 0 18px; font-size: .95rem; }
+    body.projects .jump a { margin-right: 12px; }
+
+    /* Details (no JS) */
+    body.projects details.more { margin-top: 10px; border-top: 1px solid rgba(0,0,0,.08); padding-top: 10px; }
+    body.projects details.more > summary { 
+      list-style: none; cursor: pointer; user-select: none; 
+      display: inline-block; padding: .45rem .75rem; border-radius: 10px; 
+      background: var(--brand-600, #164f96); color: #fff; font-weight: 600; 
+    }
+    body.projects details.more[open] > summary { background: var(--brand-700, #123e78); }
+    /* Remove default disclosure triangle in some browsers */
+    body.projects details.more > summary::-webkit-details-marker { display:none; }
+
+    body.projects details.more .more-body { 
+      margin-top: 12px; background: rgba(0,0,0,.02); border: 1px solid rgba(0,0,0,.06); 
+      border-radius: 12px; padding: 12px; 
+    }
+    body.projects .bullets { margin: 0 0 10px 18px; }
+    body.projects .more-grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+    body.projects .more-grid figure { margin: 0; }
+    body.projects .more-grid img { width: 100%; height: 200px; object-fit: cover; border-radius: 10px; border: 1px solid rgba(0,0,0,.06); }
+    body.projects .kv { margin: 4px 0; }
+
+    /* Section spacing */
+    body.projects section { margin: 22px 0 46px; }
+  </style>
+</head>
+<body class="projects">
+  <header>
+    <div class="topbar">
+      <div class="container" style="display:flex; gap:1rem; align-items:center;">
+        <a href="/">← Home</a>
+        <a href="/projects/">Projects</a>
+        <span style="flex:1"></span>
+        <a href="https://github.com/Fyousofi/Fyousofi.github.io/blob/main/Fatima_Yousofi_Resume%20.pdf?raw=1" target="_blank" rel="noopener">Resume</a>
+        <a href="https://www.linkedin.com/in/fatima-yousofi/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="/#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Projects</h1>
+    <p class="meta">Featured work and a full catalog below. Click <em>Details</em> on any card for methods, visuals, tools, skills, and links.</p>
+    <div class="jump">Jump to: <a href="#featured">Featured</a> · <a href="#all">All Projects</a></div>
+
+    <!-- ====================== FEATURED ====================== -->
+    <section id="featured">
+      <h2>Featured</h2>
+      <div class="project-grid">
+        <!-- FEATURED 1 -->
+        <article class="project-card" id="capstone-risk">
+          <img src="/images/capstone-risk-map.png" alt="Choropleth of high-risk health districts">
+          <div class="content">
+            <h3>MSBA Capstone — Climate Risk & Health Infrastructure</h3>
+            <p class="meta">Course: Capstone · Tools: Python, GeoPandas, scikit‑learn (K‑Means), matplotlib</p>
+            <p>Identify health infrastructure most exposed to natural hazards in Peru, Colombia, South Africa, and Nepal.</p>
+            <div class="tags"><span class="tag">Spatial</span><span class="tag">Clustering</span><span class="tag">Risk Index</span></div>
+            <details class="more">
+              <summary>Details</summary>
+              <div class="more-body">
+                <ul class="bullets">
+                  <li>Ranked districts by combined hazard, access, and facility indicators; produced risk maps.</li>
+                  <li>Delivered a prioritized shortlist for resilience investments and policy dialogue.</li>
+                </ul>
+                <div class="more-grid">
+                  <figure>
+                    <img src="/images/capstone-risk-visual.png" alt="Risk classification visual">
+                    <figcaption class="kv">Example output: clustered exposure map.</figcaption>
+                  </figure>
+                  <div>
+                    <p class="kv"><strong>Skills gained:</strong> spatial joins, feature engineering for composite indices, PCA & clustering, map storytelling.</p>
+                    <p class="kv"><strong>Links:</strong> <a href="#">Code</a> · <a href="#">Slides</a> · <a href="#">Write‑up</a></p>
+                  </div>
+                </div>
+              </div>
+            </details>
+          </div>
+        </article>
+
+        <!-- FEATURED 2 -->
+        <article class="project-card" id="lendingclub">
+          <img src="/images/lendingclub-shap.png" alt="SHAP feature importance for interest rate model">
+          <div class="content">
+            <h3>Predictive Modeling — LendingClub Interest Rate</h3>
+            <p class="meta">Course: Predictive Analytics · Tools: Python, scikit‑learn (Tree, RF, SVR, MLP), SHAP</p>
+            <p>Predict loan interest rates and explain drivers to compare pricing strategies.</p>
+            <div class="tags"><span class="tag">Modeling</span><span class="tag">Explainability</span><span class="tag">RMSE</span></div>
+            <details class="more">
+              <summary>Details</summary>
+              <div class="more-body">
+                <ul class="bullets">
+                  <li>Benchmarked 4 models; selected on cross‑validated RMSE and stability.</li>
+                  <li>SHAP showed top drivers (grade, DTI, term) for transparent recommendations.</li>
+                </ul>
+                <div class="more-grid">
+                  <figure>
+                    <img src="/images/lendingclub-actual-vs-pred.png" alt="Actual vs predicted scatter">
+                    <figcaption class="kv">Model fit: actual vs. predicted.</figcaption>
+                  </figure>
+                  <div>
+                    <p class="kv"><strong>Skills gained:</strong> cleaning/encoding, model selection, CV, SHAP storytelling.</p>
+                    <p class="kv"><strong>Links:</strong> <a href="#">Code</a> · <a href="#">Report</a></p>
+                  </div>
+                </div>
+              </div>
+            </details>
+          </div>
+        </article>
+
+        <!-- FEATURED 3 -->
+        <article class="project-card" id="tourism-segmentation">
+          <img src="/images/tourism-pca.png" alt="PCA scatter with clusters for traveler personas">
+          <div class="content">
+            <h3>Tourism Segmentation — PCA & Clustering</h3>
+            <p class="meta">Course: Analytics · Tools: Python, scikit‑learn (PCA, K‑Means), matplotlib</p>
+            <p>Derive traveler personas from Google Reviews to tailor packages and messaging.</p>
+            <div class="tags"><span class="tag">PCA</span><span class="tag">Clustering</span><span class="tag">Personas</span></div>
+            <details class="more">
+              <summary>Details</summary>
+              <div class="more-body">
+                <ul class="bullets">
+                  <li>Reduced 5k+ reviews to principal axes; identified 10 distinct personas.</li>
+                  <li>Mapped personas to product bundles (food, culture, recreation).</li>
+                </ul>
+                <div class="more-grid">
+                  <figure>
+                    <img src="/images/tourism-visual.png" alt="Persona heatmap">
+                    <figcaption class="kv">Persona preference heatmap.</figcaption>
+                  </figure>
+                  <div>
+                    <p class="kv"><strong>Skills gained:</strong> dimensionality reduction, cluster interpretation, insight narration.</p>
+                    <p class="kv"><strong>Links:</strong> <a href="#">Code</a> · <a href="#">Slides</a></p>
+                  </div>
+                </div>
+              </div>
+            </details>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ====================== ALL PROJECTS ====================== -->
+    <section id="all">
+      <h2>All Projects</h2>
+      <div class="project-grid">
+        <!-- CARD A -->
+        <article class="project-card" id="attrition">
+          <img src="/images/attrition-roc.png" alt="ROC curve of best attrition model">
+          <div class="content">
+            <h3>Employee Attrition Prediction</h3>
+            <p class="meta">Course: ML · Tools: Python, scikit‑learn</p>
+            <p>Predict voluntary attrition and surface actionable drivers for HR.</p>
+            <div class="tags"><span class="tag">Classification</span><span class="tag">AUC</span><span class="tag">Drivers</span></div>
+            <details class="more">
+              <summary>Details</summary>
+              <div class="more-body">
+                <ul class="bullets">
+                  <li>Final model ~98% AUC (per coursework results); income, tenure, satisfaction highlighted.</li>
+                  <li>Converted drivers into retention levers (comp bands, early‑tenure support).</li>
+                </ul>
+                <div class="more-grid">
+                  <figure>
+                    <img src="/images/attrition-feat.png" alt="Feature importance bar chart">
+                    <figcaption class="kv">Top predictors and direction of effect.</figcaption>
+                  </figure>
+                  <div>
+                    <p class="kv"><strong>Skills gained:</strong> feature selection, evaluation (AUC, PR), stakeholder comms.</p>
+                    <p class="kv"><strong>Links:</strong> <a href="#">Code</a> · <a href="#">Report</a></p>
+                  </div>
+                </div>
+              </div>
+            </details>
+          </div>
+        </article>
+
+        <!-- CARD B -->
+        <article class="project-card" id="airbnb-pricing">
+          <img src="/images/airbnb-coeff.png" alt="Coefficient plot for Airbnb price model">
+          <div class="content">
+            <h3>Airbnb Price Prediction — Washington, DC</h3>
+            <p class="meta">Course: Econometrics · Tools: R (lm, ggplot2)</p>
+            <p>Explain and forecast listing prices by neighborhood and property features.</p>
+            <div class="tags"><span class="tag">Regression</span><span class="tag">R</span><span class="tag">Diagnostics</span></div>
+            <details class="more">
+              <summary>Details</summary>
+              <div class="more-body">
+                <ul class="bullets">
+                  <li>Key drivers: bedrooms (+$), accommodates (+$), and location effects.</li>
+                  <li>Residual checks validated assumptions; produced coefficient plot.</li>
+                </ul>
+                <div class="more-grid">
+                  <figure>
+                    <img src="/images/airbnb-resid.png" alt="Residuals diagnostic plot">
+                    <figcaption class="kv">Model residual diagnostics.</figcaption>
+                  </figure>
+                  <div>
+                    <p class="kv"><strong>Skills gained:</strong> inference, interpretation, visualization.</p>
+                    <p class="kv"><strong>Links:</strong> <a href="#">Code</a> · <a href="#">Report</a></p>
+                  </div>
+                </div>
+              </div>
+            </details>
+          </div>
+        </article>
+
+        <!-- CARD C -->
+        <article class="project-card" id="bikeshare-forecast">
+          <img src="/images/bikeshare-ts.png" alt="Actual vs predicted hourly bike rentals">
+          <div class="content">
+            <h3>Capital Bike Share — Demand Forecasting</h3>
+            <p class="meta">Course: Time Series · Tools: R</p>
+            <p>Forecast hourly rentals using weather, time, and seasonality for ops planning.</p>
+            <div class="tags"><span class="tag">Forecasting</span><span class="tag">Seasonality</span><span class="tag">R</span></div>
+            <details class="more">
+              <summary>Details</summary>
+              <div class="more-body">
+                <ul class="bullets">
+                  <li>Feature engineered lags/seasonal terms, selected model by out‑of‑sample error.</li>
+                  <li>Scenario charts to plan peak staffing and redistribution.</li>
+                </ul>
+                <div class="more-grid">
+                  <figure>
+                    <img src="/images/bikeshare-plot.png" alt="Time series components">
+                    <figcaption class="kv">Trend/seasonal components.</figcaption>
+                  </figure>
+                  <div>
+                    <p class="kv"><strong>Skills gained:</strong> feature engineering, cross‑validation, business framing.</p>
+                    <p class="kv"><strong>Links:</strong> <a href="#">Code</a> · <a href="#">Slides</a></p>
+                  </div>
+                </div>
+              </div>
+            </details>
+          </div>
+        </article>
+
+        <!-- CARD D -->
+        <article class="project-card" id="rfm-retail">
+          <img src="/images/rfm-heatmap.png" alt="RFM heatmap showing customer value segments">
+          <div class="content">
+            <h3>NATA Supermarkets — RFM Segmentation</h3>
+            <p class="meta">Course: Marketing Analytics · Tools: Python (pandas)</p>
+            <p>Segment customers by value and behavior to focus retention offers.</p>
+            <div class="tags"><span class="tag">RFM</span><span class="tag">Customer Analytics</span><span class="tag">Python</span></div>
+            <details class="more">
+              <summary>Details</summary>
+              <div class="more-body">
+                <ul class="bullets">
+                  <li>Identified champions vs. at‑risk segments; tailored offers by category/frequency.</li>
+                </ul>
+                <div class="more-grid">
+                  <figure>
+                    <img src="/images/rfm-plot.png" alt="RFM distribution plot">
+                    <figcaption class="kv">Distribution by recency/frequency/value.</figcaption>
+                  </figure>
+                  <div>
+                    <p class="kv"><strong>Skills gained:</strong> data cleaning, cohorting, reporting.</p>
+                    <p class="kv"><strong>Links:</strong> <a href="#">Code</a> · <a href="#">One‑pager</a></p>
+                  </div>
+                </div>
+              </div>
+            </details>
+          </div>
+        </article>
+
+        <!-- CARD E -->
+        <article class="project-card" id="basket-analysis">
+          <img src="/images/placeholder-1200x675.png" alt="Association rules graph">
+          <div class="content">
+            <h3>Retail Basket Analysis — Association Rules</h3>
+            <p class="meta">Independent · Tools: Python (mlxtend)</p>
+            <p>Uncover frequent itemsets and lift to inform cross‑sell bundles.</p>
+            <div class="tags"><span class="tag">Apriori</span><span class="tag">Affinity</span><span class="tag">Retail</span></div>
+            <details class="more">
+              <summary>Details</summary>
+              <div class="more-body">
+                <ul class="bullets">
+                  <li>Filtered by support/confidence thresholds; ranked rules by lift for actionability.</li>
+                </ul>
+                <div class="more-grid">
+                  <figure>
+                    <img src="/images/basket-plot.png" alt="Rules scatter plot">
+                    <figcaption class="kv">Support vs. confidence.</figcaption>
+                  </figure>
+                  <div>
+                    <p class="kv"><strong>Skills gained:</strong> market-basket modeling, visualization.</p>
+                    <p class="kv"><strong>Links:</strong> <a href="#">Code</a> · <a href="#">Notebook</a></p>
+                  </div>
+                </div>
+              </div>
+            </details>
+          </div>
+        </article>
+
+        <!-- CARD F -->
+        <article class="project-card" id="hospital-access">
+          <img src="/images/placeholder-1200x675.png" alt="Catchment map visualization">
+          <div class="content">
+            <h3>Hospital Access — Spatial Catchment Mapping</h3>
+            <p class="meta">Independent · Tools: Python, GeoPandas</p>
+            <p>Calculate distances to nearest facilities and flag underserved areas.</p>
+            <div class="tags"><span class="tag">Geo</span><span class="tag">Health</span><span class="tag">Equity</span></div>
+            <details class="more">
+              <summary>Details</summary>
+              <div class="more-body">
+                <ul class="bullets">
+                  <li>Computed travel‑time isochrones; identified cold spots for prioritization.</li>
+                </ul>
+                <div class="more-grid">
+                  <figure>
+                    <img src="/images/hospital-visual.png" alt="Isochrone map">
+                    <figcaption class="kv">Isochrones around major facilities.</figcaption>
+                  </figure>
+                  <div>
+                    <p class="kv"><strong>Skills gained:</strong> network analysis, spatial joins, cartography.</p>
+                    <p class="kv"><strong>Links:</strong> <a href="#">Code</a> · <a href="#">Report</a></p>
+                  </div>
+                </div>
+              </div>
+            </details>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container" style="padding: 40px 0; opacity:.7; font-size:.9rem;">
+    <div>© <span id="y"></span> Fatima Yousofi</div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
