@@ -172,10 +172,10 @@
   <h2>Featured Projects</h2>
 
   <div class="project">
-    <h3> MSBA Capstone: World Bank - Assessing Risk Index for Health Infrastructure [In-perogress]</h3>
+    <h3> MSBA Capstone: Assessing Climate Change Risk Index for Health Infrastructure [In-perogress]</h3>
     <p class="meta">Role: Lead Analyst · Summer 2025</p>
 <p><strong>Findings:</strong> High-exposure clusters appear in remote districts with lower facility capacity and longer travel times. Prioritize strengthening critical facilities, building redundancy, and improving last-mile access.</p>
-<p><strong>Objective:</strong> Identify health infrastructure most exposed to floods, landslides, storms, and earthquakes across Peru, Colombia, South Africa, and Nepal to inform resilience investments.</p>
+<p><strong>Objective:</strong> Identify health infrastructure most exposed to floods, landslides, storms, and earthquakes across Peru, Colombia, South Africa, and Nepal to support policy refomr and decision making for the World Bank intervention and investment.</p>
 <p><strong>Approach:</strong> Built a composite exposure index by standardizing and weighting hazard layers with facility capacity and access indicators; validated patterns with PCA/K-Means; produced decision-ready maps and shortlists.</p>
 <p><strong>Tools:</strong> Python, GeoPandas, scikit-learn (K-Means), matplotlib/folium</p>
 <p><strong>Skills:</strong> spatial joins, composite-index design, clustering/PCA, map-based storytelling</p>
@@ -201,3 +201,36 @@
 </body>
 </html>
 
+/* ===== Home page: flatten Featured Projects cards & tweak type ===== */
+body:not(.projects) .project,
+body:not(.projects) .project-card {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+/* Calibri + slightly smaller than intro/headings */
+body:not(.projects) .project {
+  font-family: Calibri, "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+/* Project titles & meta */
+body:not(.projects) .project h3 {
+  font: inherit;
+  font-weight: 700;
+  font-size: 1.08rem;
+  margin: 6px 0 4px;
+}
+body:not(.projects) .project .meta { 
+  font-size: 0.92rem; 
+  opacity: 0.85; 
+  margin: 2px 0 8px; 
+}
+
+/* Paragraph spacing inside projects */
+body:not(.projects) .project p { 
+  margin: 4px 0 8px; 
+}
