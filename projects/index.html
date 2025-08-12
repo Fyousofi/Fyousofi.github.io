@@ -1,90 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects — Fatima Yousofi</title>
+
+  <!-- If your site has a main stylesheet, link it here (update the path if different). -->
+  <!-- <link rel="stylesheet" href="/assets/css/style.css"> -->
+
+  <!-- Projects page overrides (keeps layout consistent, darker blue theme) -->
+  <link rel="stylesheet" href="/assets/css/projects.css">
+
+  <style>
+    /* Fallback minimal layout if your main stylesheet path is different or missing. */
+    :root { --container-w: min(1100px, 92%); }
+    .topbar { display: flex; gap: 1rem; align-items: center; padding: 10px 0; }
+    .topbar .spacer { flex: 1; }
+    .container { width: var(--container-w); margin-inline: auto; }
+    .meta { opacity: .8; font-size: .92rem; margin: .25rem 0 .5rem; }
+  </style>
+</head>
 <body class="projects">
-<link rel="stylesheet" href="/assets/css/projects.css">
-/* ==== Projects page theme overrides (scoped via body.projects) ==== */
-:root {
-  /* Darker blue scale (accessible) */
-  --brand-500: #1a5fb4; /* primary */
-  --brand-600: #164f96; /* hover */
-  --brand-700: #123e78; /* headings/nav */
-  --bg-50: #f6f9ff;     /* soft page bg */
-  --ink-900: #0b1220;   /* main text */
-}
+  <header>
+    <div class="topbar">
+      <div class="container" style="display:flex; gap:1rem; align-items:center;">
+        <a href="/">← Home</a>
+        <a href="/projects/">Projects</a>
+        <span class="spacer"></span>
+        <a href="https://github.com/Fyousofi/Fyousofi.github.io/blob/main/Fatima_Yousofi_Resume%20.pdf?raw=1" target="_blank" rel="noopener">Resume</a>
+        <a href="https://www.linkedin.com/in/fatima-yousofi/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="/#contact">Contact</a>
+      </div>
+    </div>
+  </header>
 
-/* Page base */
-body.projects { background: var(--bg-50); color: var(--ink-900); }
-
-/* Top nav (uses your existing .topbar markup) */
-body.projects .topbar {
-  background: linear-gradient(90deg, var(--brand-700), var(--brand-600));
-  color: #fff;
-  box-shadow: 0 4px 20px rgba(0, 32, 128, .12);
-}
-body.projects .topbar a { color: #fff; opacity: .95; }
-body.projects .topbar a:hover { opacity: 1; }
-
-/* Typography */
-body.projects h1, body.projects h2, body.projects h3 {
-  color: var(--brand-700);
-  letter-spacing: -0.01em;
-}
-body.projects a { color: var(--brand-600); text-underline-offset: 3px; }
-body.projects a:hover { color: var(--brand-700); }
-
-/* Containers (match home width) */
-body.projects .container { width: min(1100px, 92%); margin-inline: auto; }
-
-/* Optional: if your projects list uses cards/sections */
-body.projects .project-card, body.projects .project {
-  background: #fff;
-  border: 1px solid rgba(0,0,0,.06);
-  border-radius: 16px;
-  box-shadow: 0 6px 16px rgba(0, 32, 128, .08);
-  overflow: hidden;
-}
-body.projects .project-card:hover, body.projects .project:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 24px rgba(0,32,128,.12);
-}
-
-/* Images inside project blocks */
-body.projects .project-card img, body.projects .project img {
-  display: block; width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid rgba(0,0,0,.06);
-}
-
-/* Inner spacing */
-body.projects .project-card .content, body.projects .project .content { padding: 14px 16px 18px; }
-
-/* Buttons/links that look like buttons */
-body.projects .btn, body.projects .button, body.projects button {
-  background: var(--brand-600); color: #fff; border: 0; padding: .6rem 1rem; border-radius: 12px;
-}
-body.projects .btn:hover, body.projects .button:hover, body.projects button:hover { background: var(--brand-700); }
-
-/* Tags/pills if you use them */
-body.projects .tags { display: flex; flex-wrap: wrap; gap: 8px; }
-body.projects .tag { background: rgba(18, 62, 120, .08); color: var(--brand-700); padding: .25rem .5rem; border-radius: 999px; font-size: .8rem; }
-
-/* Optional grid: only applies if you add .project-grid wrapper */
-body.projects .project-grid { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
-<body class="projects">
-  <div class="topbar"> ... your existing nav ... </div>
   <main class="container">
     <h1>Projects</h1>
-    <!-- If you already have a list, keep it. If you want a grid, wrap in .project-grid -->
+
+    <!-- Optional intro line; keep it short -->
+    <p class="meta">A collection of coursework and independent projects. Click through for code, methods, and takeaways.</p>
+
+    <!-- Grid of project cards -->
     <section class="project-grid">
+
+      <!-- CARD 1 -->
       <article class="project-card">
-        <img src="/images/placeholder-1200x675.png" alt="Project cover">
+        <img src="/images/placeholder-1200x675.png" alt="Cover visual for project" />
         <div class="content">
-          <h3>Project Title</h3>
-          <p class="meta">Course · Tools</p>
-          <p>One-line goal of the project.</p>
+          <h3>Tourism Segmentation with PCA &amp; K‑Means</h3>
+          <p class="meta">Course: Analytics | Tools: Python, scikit‑learn, matplotlib</p>
+          <p>Derived traveler personas from reviews to inform package design and targeting.</p>
           <div class="tags">
-            <span class="tag">Python</span>
-            <span class="tag">SHAP</span>
-            <span class="tag">GeoPandas</span>
+            <span class="tag">PCA</span>
+            <span class="tag">Clustering</span>
+            <span class="tag">NLP-lite</span>
           </div>
         </div>
       </article>
+
+      <!-- CARD 2 -->
+      <article class="project-card">
+        <img src="/images/placeholder-1200x675.png" alt="Cover visual for project" />
+        <div class="content">
+          <h3>Employee Attrition Prediction</h3>
+          <p class="meta">Course: ML | Tools: Python, scikit‑learn</p>
+          <p>Built a classification model and surfaced actionable drivers for HR.</p>
+          <div class="tags">
+            <span class="tag">AUC</span>
+            <span class="tag">Explainability</span>
+            <span class="tag">Classification</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 3 -->
+      <article class="project-card">
+        <img src="/images/placeholder-1200x675.png" alt="Cover visual for project" />
+        <div class="content">
+          <h3>Capital Bike Share — Demand Forecasting</h3>
+          <p class="meta">Course: Time Series | Tools: R</p>
+          <p>Forecasted hourly rentals with seasonality and weather features for ops planning.</p>
+          <div class="tags">
+            <span class="tag">Forecasting</span>
+            <span class="tag">R</span>
+            <span class="tag">Seasonality</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 4 -->
+      <article class="project-card">
+        <img src="/images/placeholder-1200x675.png" alt="Cover visual for project" />
+        <div class="content">
+          <h3>NATA Supermarkets — RFM Segmentation</h3>
+          <p class="meta">Course: Marketing Analytics | Tools: Python</p>
+          <p>Segmented customers by recency, frequency, and monetary value to guide offers.</p>
+          <div class="tags">
+            <span class="tag">RFM</span>
+            <span class="tag">Customer Analytics</span>
+            <span class="tag">Python</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 5 (example with external links styled as buttons if you add your own classes) -->
+      <article class="project-card">
+        <img src="/images/placeholder-1200x675.png" alt="Cover visual for project" />
+        <div class="content">
+          <h3>Retail Basket Analysis — Association Rules</h3>
+          <p class="meta">Independent | Tools: Python (mlxtend)</p>
+          <p>Uncovered frequent itemsets and lift to inform cross‑sell bundles.</p>
+          <div class="tags">
+            <span class="tag">Apriori</span>
+            <span class="tag">Affinity</span>
+            <span class="tag">Retail</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 6 -->
+      <article class="project-card">
+        <img src="/images/placeholder-1200x675.png" alt="Cover visual for project" />
+        <div class="content">
+          <h3>Hospital Access — Spatial Catchment Mapping</h3>
+          <p class="meta">Independent | Tools: Python, GeoPandas</p>
+          <p>Calculated travel distances to nearest facilities and flagged underserved areas.</p>
+          <div class="tags">
+            <span class="tag">Geo</span>
+            <span class="tag">Health</span>
+            <span class="tag">Equity</span>
+          </div>
+        </div>
+      </article>
+
     </section>
+
+    <!-- HOW TO USE: Duplicate any <article class="project-card"> block above for more projects. -->
   </main>
+
+  <footer class="container" style="padding: 40px 0; opacity:.7; font-size:.9rem;">
+    <div>© <span id="y"></span> Fatima Yousofi</div>
+  </footer>
+
+  <script>
+    // year stamp
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
+</html>
