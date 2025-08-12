@@ -193,22 +193,11 @@
 
   </div>
 
-    </section>
-  </main>
-/* Footer — lighter and smaller */
-.container.site-footer {
-  padding: 10px 0;
-  margin-top: 24px;
-  font-size: .9rem;
-  color: #6b7280;
-  background: transparent;
-  border-top: 1px solid rgba(0,0,0,.08);
-}
-@media (max-width:640px){
-  .container.site-footer { padding: 8px 0; font-size: .85rem; }
-}
-
-<footer class="container site-footer">
+    <footer class="container" style="padding:10px 0; margin-top:24px; font-size:.9rem; color:#6b7280; background:transparent; border-top:1px solid rgba(0,0,0,.08);">
   <div>© <span id="y"></span> Fatima Yousofi</div>
 </footer>
+
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
 
